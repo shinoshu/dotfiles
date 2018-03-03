@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dotfiles=(.zprofile .zshrc)
+dotfiles=(.zshrc)
 
 for file in ${dotfiles[@]}
 do
