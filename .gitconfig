@@ -5,6 +5,7 @@
     excludesfile = ~/.gitignore_global
 [alias]
 	a = add
+	cm = commit
 	co = checkout
 	s = status
 	ss = status -s

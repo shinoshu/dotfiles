@@ -1,4 +1,4 @@
-# PATH
+# path
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 
@@ -23,14 +23,17 @@ HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
-# 補完
+# completion
 autoload -U compinit && compinit
 
 # alias
 alias h="fc -lt '%F %T' 1"
-alias g="git"
+alias gad="git add"
+alias gco="git checkout"
+alias gst="git status"
 alias l="ls -lG"
 alias la="ls -aG"
 alias ll="ls -alG"
 alias ls="ls -G"
 alias l.="ls -ldG .*"
+alias rm="rm -i"

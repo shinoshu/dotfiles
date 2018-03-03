@@ -24,6 +24,7 @@ endif
 syntax on
 set ambiwidth=double
 set cursorline
+set hidden
 set number
 set ruler
 set shiftwidth=4
