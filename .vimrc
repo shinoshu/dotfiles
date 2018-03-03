@@ -6,7 +6,6 @@ endif
 set runtimepath+=~/src/github.com/Shougo/dein.vim
 call dein#begin(expand('~/.vim/dein'))
 
-" Plugins
 call dein#add('Shougo/dein.vim')
 call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 call dein#add('Shougo/neocomplete.vim')
@@ -21,6 +20,7 @@ if dein#check_install()
     call dein#install()
 endif
 
+" setting
 syntax on
 set ambiwidth=double
 set cursorline
