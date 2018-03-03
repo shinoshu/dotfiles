@@ -1,2 +1,3 @@
-source ~/.alias
-source ~/.zsh_peco
+source ~/.zplug/init.zsh
+
+zplug "mollifier/anyframe"
