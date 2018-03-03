@@ -1,2 +1,5 @@
+alias h="fc -lt '%F %T' 1"
+
+alias l="ls -l"
 alias la="ls -a"
 alias ll="ls -l"
