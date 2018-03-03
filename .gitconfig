@@ -5,8 +5,8 @@
     excludesfile = ~/.gitignore_global
 [alias]
 	a = add
+	co = checkout
 	s = status
 	ss = status -s
-	co = checkout
 [ghq]
     root = ./src

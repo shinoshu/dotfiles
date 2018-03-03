@@ -27,6 +27,6 @@ set cursorline
 set number
 set ruler
 set shiftwidth=4
-" set smartindent
+set smartindent
 set tabstop=4
 set title
