@@ -1,0 +1,7 @@
+[user]
+	name = Shuma Shinozaki
+	email = shu.shinozaki@gmail.com
+[core]
+	excludesfile = ~/.gitignore_global
+[ghq]
+    root = ./src
