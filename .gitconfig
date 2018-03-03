@@ -3,5 +3,10 @@
     email = shu.shinozaki@gmail.com
 [core]
     excludesfile = ~/.gitignore_global
+[alias]
+	a = add
+	s = status
+	ss = status -s
+	co = checkout
 [ghq]
     root = ./src

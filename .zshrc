@@ -28,7 +28,9 @@ autoload -U compinit && compinit
 
 # alias
 alias h="fc -lt '%F %T' 1"
-alias l="ls -l"
-alias la="ls -a"
-alias ll="ls -l"
-alias l.="ls -ld .*"
+alias g="git"
+alias l="ls -lG"
+alias la="ls -aG"
+alias ll="ls -alG"
+alias ls="ls -G"
+alias l.="ls -ldG .*"
