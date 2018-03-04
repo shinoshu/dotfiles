@@ -23,6 +23,7 @@ endif
 " setting
 syntax on
 set ambiwidth=double
+set clipboard+=unnamed
 set cursorline
 set hidden
 set number
