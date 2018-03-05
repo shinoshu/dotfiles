@@ -4,8 +4,12 @@ export PATH="/usr/local/sbin:$PATH"
 
 # zplug
 source ~/.zplug/init.zsh
+zplug "b4b4r07/enhancd", use:init.sh
 zplug "mollifier/anyframe"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
+if ! zplug check --verbose; then
+	zplug install
+fi
 zplug load
 
 # anyframe
@@ -37,3 +41,4 @@ alias ll="ls -alG"
 alias ls="ls -G"
 alias l.="ls -ldG .*"
 alias rm="rm -i"
+alias vi="vim"
