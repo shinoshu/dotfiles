@@ -1,8 +1,10 @@
 export LANG=ja_JP.UTF-8
+export GOPATH=$HOME/go
 
 # path
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
 
 # zplug
 source ~/.zplug/init.zsh
@@ -52,7 +54,7 @@ alias ls="ls -G"
 alias l.="ls -ld .*"
 alias mv="mv -i"
 alias rm="rm -i"
-alias vi="vim"
+#alias vi="nvim"
 
 alias -g G="| grep"
 alias -g L="| less"

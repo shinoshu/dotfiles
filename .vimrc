@@ -11,6 +11,7 @@ call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 call dein#add('Shougo/unite.vim')
 call dein#add('kien/ctrlp.vim')
 call dein#add('scrooloose/nerdtree')
+call dein#add('terryma/vim-multiple-cursors')
 call dein#add('tpope/vim-fugitive')
 
 call dein#end()
