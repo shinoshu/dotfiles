@@ -9,10 +9,12 @@ call dein#begin(expand('~/.vim/dein'))
 call dein#add('Shougo/dein.vim')
 call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 call dein#add('Shougo/unite.vim')
+call dein#add('fatih/vim-go')
 call dein#add('kien/ctrlp.vim')
 call dein#add('scrooloose/nerdtree')
 call dein#add('terryma/vim-multiple-cursors')
 call dein#add('tpope/vim-fugitive')
+call dein#add('vim-jp/vim-go-extra')
 
 call dein#end()
 if dein#check_install()
@@ -39,10 +41,16 @@ set tabstop=4
 set title
 
 " nnoremap
-nnoremap * *N
 nnoremap j gj
 nnoremap k gk
 nnoremap <S-h> ^
 nnoremap <S-l> $
 nnoremap <C-c><C-c> :<C-u>nohlsearch<CR><Esc>
 nnoremap <Leader>c :<C-u>setlocal cursorline! cursorcolumn!<CR>
+
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
