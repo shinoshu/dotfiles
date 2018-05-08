@@ -30,6 +30,11 @@ PROMPT='%m:%c %n$ '
 # history
 setopt share_history
 setopt hist_reduce_blanks
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_expand
+setopt hist_no_store
+setopt inc_append_history
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
@@ -43,7 +48,9 @@ autoload -Uz colors && colors
 # alias
 alias cp="cp -i"
 alias h="fc -lt '%F %T' 1"
+alias g="git"
 alias gad="git add"
+alias gcm="git commit -m"
 alias gco="git checkout"
 alias gst="git status"
 alias l="ls -l"
@@ -53,8 +60,16 @@ alias lla="ls -al"
 alias ls="ls -G"
 alias l.="ls -ld .*"
 alias mv="mv -i"
+alias pull="git pull"
+alias push="git push"
 alias rm="rm -i"
-#alias vi="nvim"
+alias vi="vim"
 
 alias -g G="| grep"
 alias -g L="| less"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/shuma/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/shuma/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/shuma/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/shuma/google-cloud-sdk/completion.zsh.inc'; fi
