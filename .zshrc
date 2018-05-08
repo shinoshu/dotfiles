@@ -42,19 +42,30 @@ autoload -Uz colors && colors
 
 # alias
 alias cp="cp -i"
+alias d="docker"
+alias dc="docker-compose"
 alias h="fc -lt '%F %T' 1"
+alias g="git"
 alias gad="git add"
+alias gcm="git commit -m"
 alias gco="git checkout"
 alias gst="git status"
 alias l="ls -l"
 alias la="ls -a"
+alias lal="ls -al"
 alias ll="ls -l"
-alias lla="ls -al"
 alias ls="ls -G"
+alias ltr="ls -ltr"
 alias l.="ls -ld .*"
 alias mv="mv -i"
 alias rm="rm -i"
-#alias vi="nvim"
+alias vi="vim"
 
 alias -g G="| grep"
 alias -g L="| less"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/shuma/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/shuma/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/shuma/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/shuma/google-cloud-sdk/completion.zsh.inc'; fi
