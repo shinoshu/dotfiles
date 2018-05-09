@@ -6,6 +6,7 @@
 [alias]
 	a = add
 	b = branch
+	ba = branch -a
 	cm = commit
 	co = checkout
 	s = status

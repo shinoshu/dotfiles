@@ -21,8 +21,15 @@ zplug load
 # anyframe
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
 add-zsh-hook chpwd chpwd_recent_dirs
-bindkey '^jb' anyframe-widget-cdr
-bindkey '^jr' anyframe-widget-execute-history
+bindkey '^ja' anyframe-widget-select-widget
+bindkey '^jb' anyframe-widget-checkout-git-branch
+bindkey '^jc' anyframe-widget-cdr
+bindkey '^jg' anyframe-widget-cd-ghq-repository
+bindkey '^jp' anyframe-widget-kill
+bindkey '^jr' anyframe-widget-put-history
+
+bindkey '^[u' undo
+bindkey '^[r' redo
 
 # prompt
 PROMPT='%m:%c %n$ '
@@ -47,6 +54,7 @@ alias dc="docker-compose"
 alias h="fc -lt '%F %T' 1"
 alias g="git"
 alias gad="git add"
+alias gbr="git branch -a"
 alias gcm="git commit -m"
 alias gco="git checkout"
 alias gst="git status"
@@ -63,6 +71,14 @@ alias vi="vim"
 
 alias -g G="| grep"
 alias -g L="| less"
+
+# vcs
+# autoload -Uz vcs_info
+# setopt prompt_subst
+# zstyle ':vcs_info:*' formats '%s][* %F{green}%b%f'
+# zstyle ':vcs_info:*' actionformats '%s][* %F{green}%b%f(%F{red}%a%f)'
+# precmd() { vcs_info }
+# PROMPT='[${vcs_info_msg_0_}]:%~/%f '
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/shuma/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/shuma/google-cloud-sdk/path.zsh.inc'; fi
