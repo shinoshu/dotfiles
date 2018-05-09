@@ -11,7 +11,10 @@ source ~/.zplug/init.zsh
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "mollifier/anyframe"
 zplug "mafredri/zsh-async"
+# zplug "olivierverdier/zsh-git-prompt"
 # zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+zplug "zsh-users/zsh-autosuggestions", defer:2
+zplug "zsh-users/zsh-completions", defer:2
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 if ! zplug check --verbose; then
 	zplug install
@@ -25,7 +28,8 @@ bindkey '^jb' anyframe-widget-cdr
 bindkey '^jr' anyframe-widget-execute-history
 
 # prompt
-PROMPT='%m:%c %n$ '
+# PROMPT='%m:%c %n$ '
+PROMPT='%F{blue}[%m:%c]%f %F{green}%n%f $ '
 
 # history
 setopt share_history
@@ -67,6 +71,22 @@ alias vi="vim"
 
 alias -g G="| grep"
 alias -g L="| less"
+
+# VCS
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
+zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
+zstyle ':vcs_info:*' actionformts "[%b|%a]"
+setopt prompt_subst
+RPROMPT='${vcs_info_msg_0_}'
+
+# function
+function ghq-update() {
+	ghq list | sed -E 's/^[^\/]+\/(.+)/\1/' | xargs -n 1 -P 10 ghq get -u
+}
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/shuma/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/shuma/google-cloud-sdk/path.zsh.inc'; fi
