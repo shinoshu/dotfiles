@@ -1,6 +1,9 @@
 export LANG=ja_JP.UTF-8
 export GOPATH=$HOME/go
 
+# enable ctrl-s
+stty stop undef
+
 # path
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
@@ -10,6 +13,7 @@ export PATH="$PATH:$GOPATH/bin"
 source ~/.zplug/init.zsh
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "mollifier/anyframe"
+zplug "momo-lab/zsh-abbrev-alias"
 zplug "mafredri/zsh-async"
 # zplug "olivierverdier/zsh-git-prompt"
 # zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
@@ -46,10 +50,28 @@ setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt hist_expand
 setopt hist_no_store
+setopt hist_verify
 setopt inc_append_history
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
+
+# option
+setopt auto_cd
+setopt correct
+setopt magic_equal_subst
+setopt mark_dirs
+setopt list_types
+setopt auto_menu
+setopt interactive_comments
+setopt magic_equal_subst
+setopt complete_in_word
+setopt always_last_prompt
+setopt print_eight_bit
+setopt extended_glob
+setopt globdots
+setopt brace_ccl
+setopt notify
 
 # completion
 autoload -Uz compinit && compinit
@@ -65,9 +87,10 @@ alias h="fc -lt '%F %T' 1"
 alias g="git"
 alias gad="git add"
 alias gbr="git branch -a"
-alias gcm="git commit -m"
+# alias gcm="git commit -m"
 alias gco="git checkout"
 alias gst="git status"
+alias j="jobs -l"
 alias l="ls -l"
 alias la="ls -a"
 alias lal="ls -al"
@@ -81,12 +104,18 @@ alias push="git push"
 alias rm="rm -i"
 alias vi="vim"
 
-alias -g G="| grep"
 alias -g L="| less"
 alias -g ...="../../"
 
 alias -s py="python"
 alias -s go="go run"
+
+# abbrev-alias
+abbrev-alias gcm='git commit -m ""'
+
+abbrev-alias -g ghqhub='~/src/github.com/'
+abbrev-alias -g gohub='~/go/src/github.com/'
+abbrev-alias -g G="| grep"
 
 # VCS
 autoload -Uz vcs_info
@@ -107,9 +136,18 @@ bindkey '^je' edit-command-line
 function ghq-update() {
 	ghq list | sed -E 's/^[^\/]+\/(.+)/\1/' | xargs -n 1 -P 10 ghq get -u
 }
+zle -N cd-up
+bindkey '^y' cd-up
+function cd-up() {
+	zle push-line && LBUFFER='builtin cd ..' && zle accept-line
+}
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/shuma/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/shuma/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/shuma/google-cloud-sdk/path.zsh.inc' ]; then
+	source '/Users/shuma/google-cloud-sdk/path.zsh.inc'
+fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/shuma/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/shuma/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/shuma/google-cloud-sdk/completion.zsh.inc' ]; then
+	source '/Users/shuma/google-cloud-sdk/completion.zsh.inc'
+fi
