@@ -83,6 +83,10 @@ alias vi="vim"
 
 alias -g G="| grep"
 alias -g L="| less"
+alias -g ...="../../"
+
+alias -s py="python"
+alias -s go="go run"
 
 # VCS
 autoload -Uz vcs_info
@@ -94,6 +98,10 @@ zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformts "[%b|%a]"
 setopt prompt_subst
 RPROMPT='${vcs_info_msg_0_}'
+
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^je' edit-command-line
 
 # function
 function ghq-update() {
