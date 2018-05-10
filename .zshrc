@@ -24,8 +24,15 @@ zplug load
 # anyframe
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
 add-zsh-hook chpwd chpwd_recent_dirs
-bindkey '^jb' anyframe-widget-cdr
-bindkey '^jr' anyframe-widget-execute-history
+bindkey '^ja' anyframe-widget-select-widget
+bindkey '^jb' anyframe-widget-checkout-git-branch
+bindkey '^jc' anyframe-widget-cdr
+bindkey '^jg' anyframe-widget-cd-ghq-repository
+bindkey '^jp' anyframe-widget-kill
+bindkey '^jr' anyframe-widget-put-history
+
+bindkey '^[u' undo
+bindkey '^[r' redo
 
 # prompt
 # PROMPT='%m:%c %n$ '
@@ -51,17 +58,21 @@ autoload -Uz colors && colors
 
 # alias
 alias cp="cp -i"
+alias d="docker"
+alias dc="docker-compose"
 alias h="fc -lt '%F %T' 1"
 alias g="git"
 alias gad="git add"
+alias gbr="git branch -a"
 alias gcm="git commit -m"
 alias gco="git checkout"
 alias gst="git status"
 alias l="ls -l"
 alias la="ls -a"
+alias lal="ls -al"
 alias ll="ls -l"
-alias lla="ls -al"
 alias ls="ls -G"
+alias ltr="ls -ltr"
 alias l.="ls -ld .*"
 alias mv="mv -i"
 alias pull="git pull"

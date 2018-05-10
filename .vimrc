@@ -9,6 +9,7 @@ call dein#begin(expand('~/.vim/dein'))
 call dein#add('Shougo/dein.vim')
 call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 call dein#add('Shougo/unite.vim')
+call dein#add('Shougo/neocomplete.vim')
 call dein#add('fatih/vim-go')
 call dein#add('kien/ctrlp.vim')
 call dein#add('scrooloose/nerdtree')
@@ -24,7 +25,9 @@ endif
 " nerdtree
 let g:NERDTreeShowBookmarks=1
 
-" setting
+""""""""""""""""""""""
+"      Settings      "
+""""""""""""""""""""""
 syntax on
 set ambiwidth=double
 set backspace=indent,eol,start
@@ -43,8 +46,8 @@ set title
 " nnoremap
 nnoremap j gj
 nnoremap k gk
-nnoremap <S-h> ^
-nnoremap <S-l> $
+"nnoremap <S-h> ^
+"nnoremap <S-l> $
 nnoremap <C-c><C-c> :<C-u>nohlsearch<CR><Esc>
 nnoremap <Leader>c :<C-u>setlocal cursorline! cursorcolumn!<CR>
 
@@ -54,3 +57,17 @@ let g:go_highlight_fields = 1
 let g:go_highlight_types = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+filetype off
+filetype plugin indent on
+
+" vim-go
+let g:go_fmt_command = "goimports"
+let g:go_autodetect_gopath = 1
+let g:go_list_type = "quickfix"
+
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_generate_tags = 1
