@@ -1,3 +1,8 @@
+if [[ ! -d ~/.zplug/ ]]; then
+	# todo: ghq
+	git clone https://github.com/zplug/zplug ~/.zplug
+fi
+
 export LANG=ja_JP.UTF-8
 export GOPATH=$HOME/go
 
@@ -115,6 +120,7 @@ abbrev-alias gcm='git commit -m ""'
 
 abbrev-alias -g ghqhub='~/src/github.com/'
 abbrev-alias -g gohub='~/go/src/github.com/'
+abbrev-alias -g myhub='~/src/github.com/shinoshu/'
 abbrev-alias -g G="| grep"
 
 # VCS
