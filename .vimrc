@@ -54,12 +54,6 @@ nnoremap k gk
 nnoremap <C-c><C-c> :<C-u>nohlsearch<CR><Esc>
 nnoremap <Leader>c :<C-u>setlocal cursorline! cursorcolumn!<CR>
 
-let g:go_highlight_functions = 1
-let g:go_highlight_methods = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_types = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_build_constraints = 1
 filetype off
 filetype plugin indent on
 
@@ -74,3 +68,17 @@ let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_extra_types = 1
 let g:go_highlight_generate_tags = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
+
+" airline
+set ambiwidth=double
+set laststatus=2
+let g:airline_powerline_fonts = 1
+let g:airline#extentions#tabline#enabled = 1
+let g:airline#extentions#tabline#buffer_idx_mode = 1
+let g:airline#extentions#whitespace#mixed_indent_algo = 1
+let g:airline_theme = 'papercolor'
+if !exists('g:airline_symbols')
+	let g:airline_symbols = {}
+endif
