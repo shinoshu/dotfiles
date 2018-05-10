@@ -24,6 +24,7 @@ zplug load
 # anyframe
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
 add-zsh-hook chpwd chpwd_recent_dirs
+
 bindkey '^ja' anyframe-widget-select-widget
 bindkey '^jb' anyframe-widget-checkout-git-branch
 bindkey '^jc' anyframe-widget-cdr
@@ -53,7 +54,7 @@ SAVEHIST=1000000
 # completion
 autoload -Uz compinit && compinit
 
-#
+# color
 autoload -Uz colors && colors
 
 # alias
