@@ -112,6 +112,7 @@ alias -s go="go run"
 
 # abbrev-alias
 abbrev-alias gcm='git commit -m ""'
+abbrev-alias 'ゔぃｍ'='vim'
 
 abbrev-alias -g ghqhub='~/src/github.com/'
 abbrev-alias -g gohub='~/go/src/github.com/'
