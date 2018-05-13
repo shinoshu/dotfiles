@@ -9,6 +9,7 @@
 	ba = branch -a
 	cm = commit
 	co = checkout
+	d = diff
 	s = status
 	ss = status -s
 [ghq]

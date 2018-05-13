@@ -7,9 +7,14 @@ set runtimepath+=~/src/github.com/Shougo/dein.vim
 call dein#begin(expand('~/.vim/dein'))
 
 call dein#add('Shougo/dein.vim')
+call dein#add('Shougo/neocomplete.vim')
+call dein#add('Shougo/neosnippet')
+call dein#add('Shougo/neosnippet-snippets')
+" call dein#add('Shougo/deoplete.nvim')
 call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 call dein#add('Shougo/unite.vim')
 call dein#add('Shougo/neocomplete.vim')
+call dein#add('bronson/vim-trailing-whitespace')
 call dein#add('edkolev/tmuxline.vim')
 call dein#add('fatih/vim-go')
 call dein#add('kien/ctrlp.vim')
@@ -19,6 +24,9 @@ call dein#add('tpope/vim-fugitive')
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
 call dein#add('vim-jp/vim-go-extra')
+call dein#add('Yggdroot/indentLine')
+call dein#add('scrooloose/syntastic')
+call dein#add('Lokaltog/vim-easymotion')
 
 call dein#end()
 if dein#check_install()
@@ -28,9 +36,7 @@ endif
 " nerdtree
 let g:NERDTreeShowBookmarks=1
 
-""""""""""""""""""""""
-"      Settings      "
-""""""""""""""""""""""
+" settings
 syntax on
 set ambiwidth=double
 set backspace=indent,eol,start
@@ -45,6 +51,11 @@ set shiftwidth=4
 set smartindent
 set tabstop=4
 set title
+set t_vb=
+set novisualbell
+
+" set list
+" set listchars=tab:»-,trail:-,nbsp:%,eol:↲
 
 " nnoremap
 nnoremap j gj
@@ -61,7 +72,6 @@ filetype plugin indent on
 let g:go_fmt_command = "goimports"
 let g:go_autodetect_gopath = 1
 let g:go_list_type = "quickfix"
-
 let g:go_highlight_types = 1
 let g:go_highlight_fields = 1
 let g:go_highlight_functions = 1
@@ -82,3 +92,7 @@ let g:airline_theme = 'papercolor'
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif
+
+" python
+" let g:deoplete#enable_at_startup = 1
+let g:syntastic_python_checkers = ['pyflakes', 'pep8']
