@@ -101,11 +101,14 @@ alias la="ls -a"
 alias lal="ls -al"
 alias ll="ls -l"
 alias ls="ls -G"
+alias lt="ls -lt"
 alias ltr="ls -ltr"
 alias l.="ls -ld .*"
 alias mv="mv -i"
 alias pull="git pull"
-alias push="git push"
+# alias push="git push"
+alias p="pwd"
+alias q="ghq list"
 alias rm="rm -i"
 alias vi="vim"
 
@@ -117,6 +120,9 @@ alias -s go="go run"
 
 # abbrev-alias
 abbrev-alias gcm='git commit -m ""'
+abbrev-alias push='git push origin'
+abbrev-alias v='vim'
+abbrev-alias 'ゔぃｍ'='vim'
 
 abbrev-alias -g ghqhub='~/src/github.com/'
 abbrev-alias -g gohub='~/go/src/github.com/'
