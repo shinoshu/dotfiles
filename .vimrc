@@ -8,12 +8,11 @@ call dein#begin(expand('~/.vim/dein'))
 
 call dein#add('Shougo/dein.vim')
 call dein#add('Shougo/neocomplete.vim')
-call dein#add('Shougo/neosnippet')
-call dein#add('Shougo/neosnippet-snippets')
+" call dein#add('Shougo/neosnippet')
+" call dein#add('Shougo/neosnippet-snippets')
 " call dein#add('Shougo/deoplete.nvim')
 call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 call dein#add('Shougo/unite.vim')
-call dein#add('Shougo/neocomplete.vim')
 call dein#add('bronson/vim-trailing-whitespace')
 call dein#add('edkolev/tmuxline.vim')
 call dein#add('fatih/vim-go')
@@ -67,6 +66,9 @@ nnoremap <Leader>c :<C-u>setlocal cursorline! cursorcolumn!<CR>
 
 filetype off
 filetype plugin indent on
+
+" json
+let g:vim_json_syntax_conceal = 0
 
 " vim-go
 let g:go_fmt_command = "goimports"
