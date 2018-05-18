@@ -92,7 +92,7 @@ alias dc="docker-compose"
 alias e="echo"
 alias h="fc -lt '%F %T' 1"
 alias g="git"
-alias gad="git add"
+alias gad="git add -v"
 alias gbr="git branch -a"
 # alias gcm="git commit -m"
 alias gco="git checkout"
@@ -121,7 +121,7 @@ alias -s py="python"
 alias -s go="go run"
 
 # abbrev-alias
-abbrev-alias gcm='git commit -m ""'
+abbrev-alias gcm='git commit'
 abbrev-alias push='git push origin'
 abbrev-alias v='vim'
 abbrev-alias 'ゔぃｍ'='vim'

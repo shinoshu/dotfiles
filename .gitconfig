@@ -2,6 +2,7 @@
     name = Shuma Shinozaki
     email = shu.shinozaki@gmail.com
 [core]
+	editor = vim
     excludesfile = ~/.gitignore_global
 [alias]
 	a = add
@@ -14,3 +15,5 @@
 	ss = status -s
 [ghq]
     root = ~/src
+[merge]
+	ff = false
