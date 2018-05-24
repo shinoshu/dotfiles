@@ -23,7 +23,7 @@ call dein#add('tpope/vim-fugitive')
 call dein#add('vim-airline/vim-airline')
 call dein#add('vim-airline/vim-airline-themes')
 call dein#add('vim-jp/vim-go-extra')
-call dein#add('Yggdroot/indentLine')
+" call dein#add('Yggdroot/indentLine')
 call dein#add('scrooloose/syntastic')
 call dein#add('Lokaltog/vim-easymotion')
 
@@ -66,9 +66,6 @@ nnoremap <Leader>c :<C-u>setlocal cursorline! cursorcolumn!<CR>
 
 filetype off
 filetype plugin indent on
-
-" json
-let g:vim_json_syntax_conceal = 0
 
 " vim-go
 let g:go_fmt_command = "goimports"

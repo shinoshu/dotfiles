@@ -165,3 +165,5 @@ fi
 if [ -f '/Users/shuma/google-cloud-sdk/completion.zsh.inc' ]; then
 	source '/Users/shuma/google-cloud-sdk/completion.zsh.inc'
 fi
+
+export GOOGLE_APPLICATION_CREDENTIALS=~/google/service_account.json
