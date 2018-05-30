@@ -35,12 +35,12 @@ zplug load
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
 add-zsh-hook chpwd chpwd_recent_dirs
 
-bindkey '^ja' anyframe-widget-select-widget
-bindkey '^jb' anyframe-widget-checkout-git-branch
-bindkey '^jc' anyframe-widget-cdr
-bindkey '^jg' anyframe-widget-cd-ghq-repository
-bindkey '^jp' anyframe-widget-kill
-bindkey '^jr' anyframe-widget-put-history
+bindkey '^j^a' anyframe-widget-select-widget
+bindkey '^j^b' anyframe-widget-checkout-git-branch
+bindkey '^j^c' anyframe-widget-cdr
+bindkey '^j^g' anyframe-widget-cd-ghq-repository
+bindkey '^j^p' anyframe-widget-kill
+bindkey '^j^r' anyframe-widget-put-history
 
 bindkey '^[u' undo
 bindkey '^[r' redo
@@ -165,5 +165,8 @@ fi
 if [ -f '/Users/shuma/google-cloud-sdk/completion.zsh.inc' ]; then
 	source '/Users/shuma/google-cloud-sdk/completion.zsh.inc'
 fi
+
+# appengine
+export PATH="$PATH:/Users/shuma/google-cloud-sdk/platform/google_appengine"
 
 export GOOGLE_APPLICATION_CREDENTIALS=~/google/service_account.json
