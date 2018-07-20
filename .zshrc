@@ -13,6 +13,7 @@ stty stop undef
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$HOME/.nodebrew/current/bin"
 export PATH="$PATH:$HOME/bin"
 
 # zplug
@@ -117,7 +118,7 @@ alias vi="vim"
 alias -g L="| less"
 alias -g ...="../../"
 
-alias -s py="python"
+# alias -s py="python"
 alias -s go="go run"
 
 # abbrev-alias

@@ -13,7 +13,8 @@
 	d = diff
 	s = status
 	ss = status -s
+	webui = !/Users/shuma/src/github.com/alberthier/git-webui/release/libexec/git-core/git-webui
 [ghq]
     root = ~/src
-[merge]
-	ff = false
+[webui]
+	autoupdate = true
