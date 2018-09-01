@@ -51,14 +51,18 @@ bindkey '^[r' redo
 PROMPT='%F{blue}[%m:%c]%f %F{green}%n%f $ '
 
 # history
-setopt share_history
-setopt hist_reduce_blanks
-setopt hist_ignore_all_dups
-setopt hist_save_no_dups
+setopt bang_hist
+setopt extended_history
 setopt hist_expand
+setopt hist_find_no_dups
+setopt hist_ignore_all_dups
 setopt hist_no_store
+setopt hist_reduce_blanks
+setopt hist_save_no_dups
 setopt hist_verify
 setopt inc_append_history
+setopt share_history
+
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
@@ -75,6 +79,7 @@ setopt magic_equal_subst
 setopt complete_in_word
 setopt always_last_prompt
 setopt print_eight_bit
+setopt print_exit_value
 setopt extended_glob
 setopt globdots
 setopt brace_ccl
