@@ -16,6 +16,9 @@ export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:$HOME/.nodebrew/current/bin"
 export PATH="$PATH:$HOME/bin"
 
+# zstyle
+zstyle ':completion:*:default' menu select=2
+
 # zplug
 source ~/.zplug/init.zsh
 zplug "b4b4r07/enhancd", use:init.sh
