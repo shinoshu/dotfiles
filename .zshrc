@@ -1,10 +1,13 @@
 if [[ ! -d ~/.zplug/ ]]; then
-	# todo: ghq
+	# TODO: use ghq
 	git clone https://github.com/zplug/zplug ~/.zplug
 fi
 
 export LANG=ja_JP.UTF-8
+export EDITOR=/usr/local/bin/vim
 export GOPATH=$HOME/go
+
+bindkey -e
 
 # enable ctrl-s
 stty stop undef
