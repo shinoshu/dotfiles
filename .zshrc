@@ -5,7 +5,13 @@ fi
 
 export LANG=ja_JP.UTF-8
 export EDITOR=/usr/local/bin/vim
+
+# golang
 export GOPATH=$HOME/go
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+# eval "$(goenv init -)"
+eval "$(/usr/local/bin/goenv init -)"
 
 bindkey -e
 
@@ -74,7 +80,7 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 
 # option
-setopt auto_cd
+# setopt auto_cd
 setopt correct
 setopt magic_equal_subst
 setopt mark_dirs
@@ -118,11 +124,12 @@ alias j="jobs -l"
 # alias lt="gls --color=auto -lt"
 # alias ltr="gls --color=auto -ltr"
 # alias l.="gls --color=auto -ld .*"
-alias l="exa -l --git"
-alias la="exa -al --git"
+alias ls="exa --git"
+alias l="ls -l"
+alias la="ls -al"
 alias ll=l
-alias lt="exa -l -s=time"
-alias ltr="exa -l -rs=time"
+alias lt="ls -l -s=time"
+alias ltr="ls -l -rs=time"
 alias l.="gls --color=auto -ld .*"
 alias mv="mv -i"
 alias pull="git pull"
