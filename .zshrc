@@ -48,7 +48,7 @@ zplug load
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
 add-zsh-hook chpwd chpwd_recent_dirs
 
-bindkey '^j^a' anyframe-widget-select-widget
+bindkey '^j^j' anyframe-widget-select-widget
 bindkey '^j^b' anyframe-widget-checkout-git-branch
 bindkey '^j^c' anyframe-widget-cdr
 bindkey '^j^g' anyframe-widget-cd-ghq-repository
