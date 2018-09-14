@@ -34,6 +34,7 @@ zplug "b4b4r07/enhancd", use:init.sh
 zplug "mollifier/anyframe"
 zplug "momo-lab/zsh-abbrev-alias"
 zplug "mafredri/zsh-async"
+zplug "mrowa44/emojify", as:command
 # zplug "olivierverdier/zsh-git-prompt"
 # zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
 zplug "zsh-users/zsh-autosuggestions", defer:2
