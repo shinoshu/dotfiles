@@ -44,6 +44,16 @@ if ! zplug check --verbose; then
 fi
 zplug load
 
+# zaw
+# TODO: check
+source ~/src/github.com/zsh-users/zaw/zaw.zsh
+bindkey '^@' zaw-cdr
+bindkey '^R' zaw-history
+bindkey '^X^F' zaw-git-files
+bindkey '^X^B' zaw-git-branches
+bindkey '^X^P' zaw-process
+bindkey '^X^A' zaw-tmux
+
 # anyframe
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
 add-zsh-hook chpwd chpwd_recent_dirs
@@ -168,6 +178,11 @@ zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformts "[%b|%a]"
 setopt prompt_subst
 RPROMPT='${vcs_info_msg_0_}'
+
+# cache
+zstyle ':completion:*' use-cache yes
+zstyle ':completion:*' cache-path ~/.zsh/cache
+zstyle ':completion:*' verbose yes
 
 autoload -Uz edit-command-line
 zle -N edit-command-line
