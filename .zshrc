@@ -6,13 +6,6 @@ fi
 export LANG=ja_JP.UTF-8
 export EDITOR=/usr/local/bin/vim
 
-# golang
-export GOPATH=$HOME/go
-export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
-# eval "$(goenv init -)"
-eval "$(/usr/local/bin/goenv init -)"
-
 bindkey -e
 
 # enable ctrl-s
@@ -24,6 +17,15 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:$HOME/.nodebrew/current/bin"
 export PATH="$PATH:$HOME/bin"
+
+# Ruby
+eval "$(rbenv init -)"
+
+# golang
+export GOPATH=$HOME/go
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
 
 # zstyle
 zstyle ':completion:*:default' menu select=2
