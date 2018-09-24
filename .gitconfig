@@ -6,9 +6,10 @@
     excludesfile = ~/.gitignore_global
 [alias]
 	a = add
+	ac = !git add . && git commit
 	b = branch
 	ba = branch -a
-	cm = commit
+	c = commit
 	co = checkout
 	d = diff
 	s = status
