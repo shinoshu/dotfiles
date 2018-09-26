@@ -116,6 +116,9 @@ setopt notify
 # completion
 autoload -Uz compinit && compinit
 
+# fpath=($HOME/src/github.com/knu/zsh-git-escape-magic $fpath) && compinit
+# autoload -Uz git-escape-magic && git-escape-magic
+
 # color
 autoload -Uz colors && colors
 
