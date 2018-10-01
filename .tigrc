@@ -1,2 +1,7 @@
+# rebase
 bind main R !git rebase -i %(commit)
 bind diff R !git rebase -i %(commit)
+
+# rebase
+bind main ! !git revert -i %(commit)
+bind diff ! !git revert -i %(commit)
