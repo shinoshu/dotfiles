@@ -18,6 +18,9 @@ export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:$HOME/.nodebrew/current/bin"
 export PATH="$PATH:$HOME/bin"
 
+# python
+eval "$(pyenv init -)"
+
 # Ruby
 eval "$(rbenv init -)"
 
