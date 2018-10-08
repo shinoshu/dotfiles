@@ -123,6 +123,7 @@ autoload -Uz compinit && compinit
 autoload -Uz colors && colors
 
 # alias
+alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
 alias cp="cp -i"
 alias d="docker"
 alias dc="docker-compose"
