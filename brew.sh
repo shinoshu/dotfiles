@@ -14,6 +14,7 @@ brew install postgresql
 brew install pyenv
 brew install rbenv
 brew install ricty --with-powerline
+brew install terminal-notifier
 brew install tig
 brew install zsh
 
