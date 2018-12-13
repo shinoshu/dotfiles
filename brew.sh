@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh -x
 
 brew install bat
 brew install exa
