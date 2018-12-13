@@ -13,6 +13,7 @@ brew install peco
 brew install postgresql
 brew install pyenv
 brew install rbenv
+brew install ricty --with-powerline
 brew install tig
 brew install zsh
 
@@ -25,3 +26,4 @@ brew cask install slack
 brew cask install visual-studio-code
 
 brew cask alfred link
+cp -p /usr/local/opt/ricty/share/fonts/* ~/Library/Fonts/
