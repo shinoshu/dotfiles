@@ -5,6 +5,7 @@ fi
 
 export LANG=ja_JP.UTF-8
 export EDITOR=/usr/local/bin/vim
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 bindkey -e
 
