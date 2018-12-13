@@ -19,9 +19,12 @@ brew install zsh
 
 brew install caskroom/cask/brew-cask
 brew cask install alfred
+brew cask install cheatsheet
 brew cask install docker
 brew cask install google-chrome
 brew cask install google-japanese-ime
+brew cask install gyazo
+brew cask install qlstephen
 brew cask install slack
 brew cask install visual-studio-code
 
