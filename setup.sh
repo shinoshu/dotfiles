@@ -6,5 +6,3 @@ for file in ${dotfiles[@]}
 do
     ln -s ~/src/github.com/shinoshu/dotfiles/$file $HOME/$file
 done
-
-ln -s ~/src/github.com/shinoshu/dotfiles/bin $HOME/bin
