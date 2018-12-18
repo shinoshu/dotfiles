@@ -20,10 +20,8 @@ export PATH="$PATH:$HOME/.nodebrew/current/bin"
 export PATH="$PATH:$HOME/.pyenv/bin"
 export PATH="$PATH:$HOME/bin"
 
-# python
+eval "$(direnv hook zsh)"
 eval "$(pyenv init -)"
-
-# Ruby
 eval "$(rbenv init -)"
 
 # golang
