@@ -1,6 +1,7 @@
 #!/bin/sh -x
 
 brew install bat
+brew install direnv
 brew install exa
 brew install ghq
 brew install gibo
