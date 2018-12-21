@@ -91,7 +91,7 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history
 
-HISTFILE=~/.zsh_history
+HISTFILE=~/Dropbox/.zsh_history
 HISTSIZE=1000000
 SAVEHIST=1000000
 
