@@ -14,6 +14,7 @@ brew install peco
 brew install postgresql
 brew install pyenv
 brew install rbenv
+brew install rmtrash
 brew install ricty --with-powerline
 brew install terminal-notifier
 brew install tig
