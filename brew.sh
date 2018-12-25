@@ -3,6 +3,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install bat
+brew install coreutils
 brew install direnv
 brew install exa
 brew install ghq
