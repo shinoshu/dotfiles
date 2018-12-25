@@ -1,8 +1,3 @@
-if [[ ! -d ~/.zplug/ ]]; then
-	# TODO: use ghq
-	git clone https://github.com/zplug/zplug ~/.zplug
-fi
-
 export LANG=ja_JP.UTF-8
 export EDITOR=/usr/local/bin/vim
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
@@ -34,6 +29,10 @@ eval "$(goenv init -)"
 zstyle ':completion:*:default' menu select=2
 
 # zplug
+if [ ! -d ~/src/github.com/zplug/zplug/ ]; then
+	ghq get https://github.com/zplug/zplug
+fi
+
 source ~/.zplug/init.zsh
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "mollifier/anyframe"
