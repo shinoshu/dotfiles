@@ -8,5 +8,6 @@ do
 done
 
 # zsh
+# sudo cp -p shells shells.org
 # echo '/usr/local/bin/zsh' >> /etc/shells
 # chsh -s /usr/local/bin/zsh
