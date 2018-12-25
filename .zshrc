@@ -30,7 +30,7 @@ zstyle ':completion:*:default' menu select=2
 
 # zplug
 if [ ! -d ~/src/github.com/zplug/zplug/ ]; then
-	ghq get https://github.com/zplug/zplug
+	ghq get https://github.com/zplug/zplug.git
 fi
 
 source ~/src/github.com/zplug/zplug/init.zsh
@@ -50,7 +50,9 @@ fi
 zplug load
 
 # zaw
-# TODO: check
+if [ ! -d ~/src/github.com/zsh-users/zaw/ ]; then
+	ghq get https://github.com/zsh-users/zaw.git
+fi
 source ~/src/github.com/zsh-users/zaw/zaw.zsh
 bindkey '^@' zaw-cdr
 bindkey '^R' zaw-history
