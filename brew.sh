@@ -1,5 +1,7 @@
 #!/bin/sh -x
 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 brew install bat
 brew install direnv
 brew install exa
