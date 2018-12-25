@@ -1,5 +1,6 @@
 #!/bin/bash
 
+##### dotfiles #####
 dotfiles=(.gitconfig .gitignore_global .tigrc .tmux.conf .vimrc .zshrc)
 
 for file in ${dotfiles[@]}
@@ -7,9 +8,9 @@ do
     ln -s ~/src/github.com/shinoshu/dotfiles/$file $HOME/$file
 done
 
+##### defaults #####
 # すべてのファイル名拡張子を表示
 defaults write com.apple.finder AppleShowAllFiles TRUE
-
 killall Finder
 
 # zsh
