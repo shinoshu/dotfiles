@@ -11,3 +11,7 @@ done
 # sudo cp -p shells shells.org
 # echo '/usr/local/bin/zsh' >> /etc/shells
 # chsh -s /usr/local/bin/zsh
+
+# google-cloud-sdk
+# chmod +x ~/google-cloud-sdk/platform/google_appengine/appcfg.py
+# chmod +x ~/google-cloud-sdk/platform/google_appengine/goapp
