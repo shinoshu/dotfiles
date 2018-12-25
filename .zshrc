@@ -212,6 +212,11 @@ function cd-up() {
 	zle push-line && LBUFFER='builtin cd ..' && zle accept-line
 }
 
+# Google Cloud SDK
+if [ ! -e '/Users/shuma/google-cloud-sdk' ]; then
+	curl https://sdk.cloud.google.com | bash
+fi
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/shuma/google-cloud-sdk/path.zsh.inc' ]; then
 	source '/Users/shuma/google-cloud-sdk/path.zsh.inc'
