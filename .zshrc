@@ -204,7 +204,7 @@ bindkey '^je' edit-command-line
 
 # function
 function ghq-update() {
-	ghq list | sed -E 's/^[^\/]+\/(.+)/\1/' | xargs -n 1 -P 10 ghq get -u
+	ghq list | sed -E 's/^[^\/]+\/(.+)/\1/' | xargs -n 1 -P 10 -t ghq get -u
 }
 
 zle -N cd-up
