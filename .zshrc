@@ -33,7 +33,7 @@ if [ ! -d ~/src/github.com/zplug/zplug/ ]; then
 	ghq get https://github.com/zplug/zplug
 fi
 
-source ~/.zplug/init.zsh
+source ~/src/github.com/zplug/zplug/init.zsh
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "mollifier/anyframe"
 zplug "momo-lab/zsh-abbrev-alias"
