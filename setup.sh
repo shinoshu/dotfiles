@@ -7,6 +7,11 @@ do
     ln -s ~/src/github.com/shinoshu/dotfiles/$file $HOME/$file
 done
 
+# すべてのファイル名拡張子を表示
+defaults write com.apple.finder AppleShowAllFiles TRUE
+
+killall Finder
+
 # zsh
 # sudo cp -p shells shells.org
 # echo '/usr/local/bin/zsh' >> /etc/shells
