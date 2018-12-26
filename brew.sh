@@ -26,8 +26,11 @@ brew install zsh
 
 brew install caskroom/cask/brew-cask
 brew cask install alfred
+brew cask install appcleaner
 brew cask install cheatsheet
+brew cask install clipy
 brew cask install docker
+brew cask install dropbox
 brew cask install google-chrome
 brew cask install google-japanese-ime
 brew cask install gyazo
