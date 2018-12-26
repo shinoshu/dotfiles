@@ -11,6 +11,7 @@ brew install gibo
 brew install goenv
 brew install hub
 brew install jq
+brew install mas
 brew install node
 brew install nodebrew
 brew install peco
