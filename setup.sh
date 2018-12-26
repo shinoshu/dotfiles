@@ -2,7 +2,6 @@
 
 ##### dotfiles #####
 dotfiles=(.gitconfig .gitignore_global .tigrc .tmux.conf .vimrc .zshrc)
-
 for file in ${dotfiles[@]}
 do
     ln -s ~/src/github.com/shinoshu/dotfiles/$file $HOME/$file
@@ -13,6 +12,7 @@ done
 defaults write com.apple.finder AppleShowAllFiles TRUE
 killall Finder
 
+##### manual #####
 # zsh
 # sudo cp -p shells shells.org
 # echo '/usr/local/bin/zsh' >> /etc/shells
