@@ -21,3 +21,6 @@ killall Finder
 # google-cloud-sdk
 # chmod +x ~/google-cloud-sdk/platform/google_appengine/appcfg.py
 # chmod +x ~/google-cloud-sdk/platform/google_appengine/goapp
+
+# nodebrew
+# nodebrew setup_dirs
