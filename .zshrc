@@ -232,4 +232,4 @@ fi
 export PATH="$PATH:/Users/shuma/google-cloud-sdk/platform/google_appengine"
 
 # サービスアカウント
-export GOOGLE_APPLICATION_CREDENTIALS=~/google/service_account.json
+export GOOGLE_APPLICATION_CREDENTIALS=~/service_account.json
