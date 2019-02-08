@@ -19,6 +19,7 @@ killall Finder
 # chsh -s /usr/local/bin/zsh
 
 # google-cloud-sdk
+# curl https://sdk.cloud.google.com | bash
 # chmod +x ~/google-cloud-sdk/platform/google_appengine/appcfg.py
 # chmod +x ~/google-cloud-sdk/platform/google_appengine/goapp
 

@@ -165,6 +165,7 @@ alias q="ghq list"
 # alias rm="rm -i"
 alias rm="rmtrash"
 alias vi="vim"
+alias vim="/usr/local/bin/vim"
 
 alias -g L="| less"
 alias -g ...="../../"
