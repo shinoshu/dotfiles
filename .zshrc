@@ -20,7 +20,7 @@ eval "$(pyenv init -)"
 eval "$(rbenv init -)"
 
 # golang
-export GOPATH=$HOME/go
+export GOPATH=$HOME
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
