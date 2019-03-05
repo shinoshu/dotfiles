@@ -8,8 +8,8 @@ bindkey -e
 stty stop undef
 
 # path
-export PATH="$PATH:/usr/local/bin"
-export PATH="$PATH:/usr/local/sbin"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
 export PATH="$PATH:$HOME/.nodebrew/current/bin"
 export PATH="$PATH:$HOME/.pyenv/bin"
