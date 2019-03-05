@@ -25,3 +25,5 @@ killall Finder
 
 # nodebrew
 # nodebrew setup_dirs
+
+# npm i -g npm-check-updates
