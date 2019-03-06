@@ -6,6 +6,7 @@ brew install bat
 brew install coreutils
 brew install direnv
 brew install exa
+brew install fish
 brew install ghq
 brew install gibo
 brew install goenv
