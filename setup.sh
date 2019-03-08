@@ -27,3 +27,5 @@ killall Finder
 # nodebrew setup_dirs
 
 # npm i -g npm-check-updates
+
+# xcode-select --install
