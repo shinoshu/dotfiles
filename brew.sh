@@ -16,6 +16,7 @@ brew install mas
 brew install node
 brew install nodebrew
 brew install peco
+brew install pipenv
 brew install postgresql
 brew install pyenv
 brew install rbenv
