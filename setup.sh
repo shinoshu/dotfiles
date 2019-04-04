@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh -x
+
+curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/brew.sh
 
 ##### dotfiles #####
 dotfiles=(.gitconfig .gitignore_global .tigrc .tmux.conf .vimrc .zshrc)
