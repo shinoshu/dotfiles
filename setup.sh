@@ -14,20 +14,21 @@ done
 defaults write com.apple.finder AppleShowAllFiles TRUE
 killall Finder
 
-##### manual #####
+########## manual ##########
 # zsh
 # sudo cp -p shells shells.org
 # echo '/usr/local/bin/zsh' >> /etc/shells
 # chsh -s /usr/local/bin/zsh
-
+#
 # google-cloud-sdk
 # curl https://sdk.cloud.google.com | bash
 # chmod +x ~/google-cloud-sdk/platform/google_appengine/appcfg.py
 # chmod +x ~/google-cloud-sdk/platform/google_appengine/goapp
-
+#
 # nodebrew
 # nodebrew setup_dirs
-
+#
 # npm i -g npm-check-updates
-
+#
 # xcode-select --install
+##############################
