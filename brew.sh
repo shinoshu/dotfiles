@@ -24,6 +24,7 @@ brew install rmtrash
 brew install ricty --with-powerline
 brew install terminal-notifier
 brew install tig
+brew install tldr
 brew install zsh
 
 brew install caskroom/cask/brew-cask
