@@ -9,8 +9,10 @@
 	ac = !git add . && git commit
 	b = branch
 	ba = branch -a
-	c = commit
+	cm = commit
+	cma = commit -a
 	co = checkout
+	cob = checkout -b
 	d = diff
 	s = status
 	ss = status -s
