@@ -206,6 +206,12 @@ zle -N edit-command-line
 bindkey '^je' edit-command-line
 
 # function
+function update() {
+	brew upgrade
+	ncu -g | grep npm | sh -x
+	ghq-update
+}
+
 function ghq-update() {
 	ghq list | grep github.com | sed -E 's/^[^\/]+\/(.+)/\1/' | xargs -n 1 -P 10 -t ghq get -u
 }
