@@ -21,7 +21,9 @@ eval "$(rbenv init -)"
 
 # golang
 export GOPATH=$HOME
+# export GOROOT=$HOME
 export GOENV_ROOT="$HOME/.goenv"
+export GO111MODULE=on
 export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
 
@@ -41,6 +43,7 @@ zplug "mafredri/zsh-async"
 zplug "mrowa44/emojify", as:command
 # zplug "olivierverdier/zsh-git-prompt"
 # zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+zplug "wbinglee/zsh-wakatime"
 zplug "zsh-users/zsh-autosuggestions", defer:2
 zplug "zsh-users/zsh-completions", defer:2
 zplug "zsh-users/zsh-syntax-highlighting", defer:2

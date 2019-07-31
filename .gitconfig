@@ -1,6 +1,6 @@
 [user]
-    name = Shuma Shinozaki
-    email = shu.shinozaki@gmail.com
+	name = Shuma Shinozaki
+	email = shu.shinozaki@gmail.com
 [core]
 	editor = vim
     excludesfile = ~/.gitignore_global
@@ -34,3 +34,8 @@
 	prompt = false
 [diff]
 	tool = Kaleidoscope
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
