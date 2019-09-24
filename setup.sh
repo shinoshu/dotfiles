@@ -1,6 +1,7 @@
 #!/bin/sh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/brew.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/mas.sh)"
 
 ghq get shinoshu/dotfiles
 
