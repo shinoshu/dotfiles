@@ -2,7 +2,7 @@
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/brew.sh)"
 
-# TODO: ghq get shinoshu/dotfiles
+ghq get shinoshu/dotfiles
 
 ##### dotfiles #####
 dotfiles=(.gitconfig .gitignore_global .tigrc .tmux.conf .vimrc .wakatime.cfg .zshrc)
