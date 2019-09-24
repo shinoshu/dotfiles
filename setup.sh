@@ -1,4 +1,4 @@
-#!/bin/sh -x
+#!/bin/sh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/brew.sh)"
 
