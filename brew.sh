@@ -37,6 +37,7 @@ brew cask install dropbox
 brew cask install google-chrome
 brew cask install google-japanese-ime
 brew cask install gyazo
+brew cask install jasper
 brew cask install postman
 brew cask install qlstephen
 brew cask install slack
