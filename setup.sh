@@ -24,6 +24,9 @@ killall Finder
 # chsh -s /usr/local/bin/zsh
 #
 # google-cloud-sdk
+# ・https://cloud.google.com/sdk/docs/initializing?hl=ja
+# ・https://cloud.google.com/sdk/downloads?hl=ja
+#
 # curl https://sdk.cloud.google.com | bash
 # chmod +x ~/google-cloud-sdk/platform/google_appengine/appcfg.py
 # chmod +x ~/google-cloud-sdk/platform/google_appengine/goapp
@@ -33,6 +36,7 @@ killall Finder
 #
 # npm i -g npm-check-updates
 # npm i -g @angular/cli
+# npm i -g @google/clasp
 #
 # xcode-select --install
 ##############################
