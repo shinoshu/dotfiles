@@ -15,6 +15,7 @@ brew install goenv
 brew install hub
 brew install jq
 brew install mas
+brew install mkcert
 brew install nodebrew
 brew install peco
 brew install pipenv
