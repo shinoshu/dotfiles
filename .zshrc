@@ -245,3 +245,6 @@ export PATH="$PATH:/Users/shuma/google-cloud-sdk/platform/google_appengine"
 
 # サービスアカウント
 # export GOOGLE_APPLICATION_CREDENTIALS=~/service_account.json
+
+export CLOUDSDK_COMPUTE_ZONE=asia-northeast1-b
+export CLOUDSDK_COMPUTE_REGION=asia-northeast1

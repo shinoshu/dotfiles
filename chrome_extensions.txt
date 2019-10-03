@@ -4,5 +4,8 @@ Google Mail Checker
 Google ハングアウト
 - https://chrome.google.com/webstore/detail/google-hangouts/nckgahadagoaajjgafhacjanaoiihapd?hl=ja
 
+draw.io Desktop
+- https://chrome.google.com/webstore/detail/drawio-desktop/pebppomjfocnoigkeepgbmcifnnlndla?hl=ja
+
 Screencastify - Screen Video Recorder
 - https://chrome.google.com/webstore/detail/screencastify-screen-vide/mmeijimgabbpbgpdklnllpncmdofkcpn?hl=ja
