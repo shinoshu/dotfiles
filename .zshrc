@@ -219,6 +219,10 @@ function ghq-update() {
 	ghq list | grep github.com | sed -E 's/^[^\/]+\/(.+)/\1/' | xargs -n 1 -P 10 -t ghq get -u
 }
 
+function google-chrome() {
+	/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --profile-directory=$1 $2
+}
+
 zle -N cd-up
 bindkey '^y' cd-up
 function cd-up() {
