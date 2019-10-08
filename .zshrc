@@ -7,6 +7,11 @@ bindkey -e
 # enable ctrl-s
 stty stop undef
 
+if [ ! -f ~/.zshrc.zwc ] || [ ~/.zshrc -nt ~/.zshrc.zwc ]; then
+	echo zcompile
+	zcompile ~/.zshrc
+fi
+
 # path
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
