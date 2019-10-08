@@ -31,6 +31,8 @@ killall Finder
 # chmod +x ~/google-cloud-sdk/platform/google_appengine/appcfg.py
 # chmod +x ~/google-cloud-sdk/platform/google_appengine/goapp
 #
+# bash <(curl -s -S -L https://git.io/install-gam)
+#
 # nodebrew
 # nodebrew setup_dirs
 #
