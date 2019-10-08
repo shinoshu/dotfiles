@@ -13,6 +13,7 @@ brew install ghq
 brew install gibo
 brew install goenv
 brew install hub
+# brew install hydra
 brew install jq
 brew install mas
 brew install mkcert
@@ -30,21 +31,30 @@ brew install tldr
 brew install zsh
 
 brew install caskroom/cask/brew-cask
+brew cask install adobe-creative-cloud
 brew cask install alfred
+brew cask install angry-ip-scanner
 brew cask install appcleaner
+brew cask install burp-suite
 # brew cask install cheatsheet
 brew cask install clipy
 brew cask install docker
+brew cask install docker-toolbox
 brew cask install dropbox
 brew cask install google-chrome
 brew cask install google-japanese-ime
 brew cask install gyazo
+brew cask install hyperswitch
+brew cask install iterm2
 brew cask install jasper
 brew cask install postman
 brew cask install qlstephen
+# brew cask install screenflow
 brew cask install slack
 brew cask install virtualbox && brew cask install vagrant
 brew cask install visual-studio-code
+brew cask install xmind
+brew cask install zenmap
 
 brew cask alfred link
 cp -p /usr/local/opt/ricty/share/fonts/* ~/Library/Fonts/
