@@ -51,6 +51,7 @@ brew cask install postman
 brew cask install qlstephen
 # brew cask install screenflow
 brew cask install slack
+brew cask install soundflower
 brew cask install virtualbox && brew cask install vagrant
 brew cask install visual-studio-code
 brew cask install xmind
