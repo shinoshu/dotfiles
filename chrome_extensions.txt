@@ -9,3 +9,7 @@ draw.io Desktop
 
 Screencastify - Screen Video Recorder
 - https://chrome.google.com/webstore/detail/screencastify-screen-vide/mmeijimgabbpbgpdklnllpncmdofkcpn?hl=ja
+
+Stylus
+- https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
+- https://github.com/StylishThemes
