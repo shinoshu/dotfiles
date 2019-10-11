@@ -2,20 +2,34 @@
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/brew.sh)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/mas.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/vscode.sh)"
 
+########## dotfiles ##########
+git config --grobal ghq.root ~/src
 ghq get shinoshu/dotfiles
+cd ~/src/github.com/shinoshu/dotfiles
 
-##### dotfiles #####
-dotfiles=(.gitconfig .gitignore_global .tigrc .tmux.conf .vimrc .wakatime.cfg .zshrc)
+dotfiles=(
+    .gitconfig
+    .gitignore_global
+    .tigrc
+	.tmux.conf
+    .vimrc
+    .wakatime.cfg
+    .zshrc
+)
+
 for file in ${dotfiles[@]}
 do
     ln -s ~/src/github.com/shinoshu/dotfiles/$file $HOME/$file
 done
+##############################
 
-##### defaults #####
+########## defaults ##########
 # すべてのファイル名拡張子を表示
 defaults write com.apple.finder AppleShowAllFiles TRUE
 killall Finder
+##############################
 
 ########## manual ##########
 # zsh
