@@ -12,6 +12,7 @@ brew install fish
 brew install ghq
 brew install gibo
 brew install goenv
+brew install graphviz
 brew install hub
 # brew install hydra
 brew install jq
@@ -20,6 +21,7 @@ brew install mkcert
 brew install nodebrew
 brew install peco
 brew install pipenv
+brew install plantuml
 brew install postgresql
 brew install pyenv
 brew install rbenv
