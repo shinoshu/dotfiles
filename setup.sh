@@ -2,7 +2,9 @@
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/brew.sh)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/mas.sh)"
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/vscode.sh)"
+ln -s ~/src/github.com/shinoshu/dotfiles/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
 ########## dotfiles ##########
 git config --grobal ghq.root ~/src
