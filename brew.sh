@@ -8,6 +8,7 @@ brew install bat
 brew install coreutils
 brew install direnv
 brew install exa
+brew install exploitdb
 brew install fish
 # brew install geoip
 brew install ghq
