@@ -42,6 +42,7 @@ brew cask install adobe-creative-cloud
 brew cask install alfred
 brew cask install angry-ip-scanner
 brew cask install appcleaner
+brew cask install avast-security
 brew cask install burp-suite
 # brew cask install cheatsheet
 brew cask install clipy
