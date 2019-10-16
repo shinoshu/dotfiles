@@ -9,6 +9,7 @@ brew install coreutils
 brew install direnv
 brew install exa
 brew install fish
+# brew install geoip
 brew install ghq
 brew install gibo
 brew install goenv
@@ -27,9 +28,12 @@ brew install pyenv
 brew install rbenv
 brew install rmtrash
 brew install ricty --with-powerline
+brew install snort
+brew install suricata
 brew install terminal-notifier
 brew install tig
 brew install tldr
+brew install watch
 brew install zsh
 
 brew install caskroom/cask/brew-cask
@@ -57,6 +61,7 @@ brew cask install soundflower
 brew cask install virtualbox && brew cask install vagrant
 brew cask install visual-studio-code
 brew cask install xmind
+brew cask install wireshark
 brew cask install zenmap
 
 brew cask alfred link
