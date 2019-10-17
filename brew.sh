@@ -60,6 +60,7 @@ brew cask install qlstephen
 # brew cask install screenflow
 brew cask install slack
 brew cask install soundflower
+brew cask install sublime-text
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
