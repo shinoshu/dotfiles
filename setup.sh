@@ -9,7 +9,6 @@ ln -s ~/src/github.com/shinoshu/dotfiles/settings.json ~/Library/Application\ Su
 ########## dotfiles ##########
 git config --grobal ghq.root ~/src
 ghq get shinoshu/dotfiles
-cd ~/src/github.com/shinoshu/dotfiles
 
 dotfiles=(
     .gitconfig
