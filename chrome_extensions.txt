@@ -13,3 +13,6 @@ Screencastify - Screen Video Recorder
 Stylus
 - https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
 - https://github.com/StylishThemes
+
+Workona
+- https://chrome.google.com/webstore/detail/workona/ailcmbgekjpnablpdkmaaccecekgdhlh
