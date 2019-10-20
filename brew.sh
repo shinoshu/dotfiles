@@ -71,3 +71,5 @@ brew cask install zenmap
 
 brew cask alfred link
 cp -p /usr/local/opt/ricty/share/fonts/* ~/Library/Fonts/
+
+brew tap heroku/brew && brew install heroku
