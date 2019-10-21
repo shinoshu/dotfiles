@@ -2,7 +2,9 @@
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+brew install aircrack-ng
 # TODO: brew install anyenv
+brew install arp-scan
 brew install awscli
 brew install bat
 brew install coreutils
