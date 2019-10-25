@@ -23,6 +23,7 @@ brew install jq
 brew install mas
 brew install mkcert
 brew install nodebrew
+brew install openvpn
 brew install peco
 brew install pipenv
 brew install plantuml
