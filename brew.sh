@@ -52,6 +52,7 @@ brew cask install clipy
 brew cask install docker
 brew cask install docker-toolbox
 brew cask install dropbox
+brew cask install dynalist
 brew cask install google-chrome
 brew cask install google-japanese-ime
 brew cask install gyazo

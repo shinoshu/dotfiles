@@ -20,3 +20,6 @@ Workona
 
 iOctotree Pro
 - https://chrome.google.com/webstore/detail/octotree-pro/fjcahddnekkgihjnjnimgiggdmlgcnbc
+
+Refined GitHub
+- https://chrome.google.com/webstore/detail/refined-github/hlepfoohegkhhmjieoechaddaejaokhf

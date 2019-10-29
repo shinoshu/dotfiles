@@ -10,6 +10,7 @@ mas install 411213048  # LadioCast
 mas install 1274495053 # Microsoft To Do
 mas install 823766827  # OneDrive
 mas install 425955336  # Skitch
+mas install 692867256  # Simplenote
 mas install 957734279  # TogglDesktop
 mas install 1278508951 # Trello
 mas install 457622435  # Yoink
