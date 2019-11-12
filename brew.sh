@@ -41,6 +41,7 @@ brew install watch
 brew install zsh
 
 brew install caskroom/cask/brew-cask
+brew cask install 1password
 brew cask install adobe-creative-cloud
 brew cask install alfred
 brew cask install angry-ip-scanner
