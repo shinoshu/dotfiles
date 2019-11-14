@@ -60,6 +60,7 @@ brew cask install gyazo
 brew cask install hyperswitch
 brew cask install iterm2
 brew cask install jasper
+brew cask install krisp
 brew cask install muzzle
 brew cask install postman
 brew cask install qlstephen
