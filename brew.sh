@@ -48,6 +48,7 @@ brew cask install angry-ip-scanner
 brew cask install appcleaner
 brew cask install avast-security
 brew cask install burp-suite
+# brew cask install camtwist
 # brew cask install cheatsheet
 brew cask install clipy
 brew cask install docker

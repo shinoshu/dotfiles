@@ -1,6 +1,9 @@
 Google Mail Checker
 - https://chrome.google.com/webstore/detail/google-mail-checker/mihcahmgecmbnbcchbopgniflfhgnkff?hl=ja
 
+Checker Plus for Gmail™
+- https://chrome.google.com/webstore/detail/checker-plus-for-gmail/oeopbcgkkoapgobdbedcemjljbihmemj?hl=ja
+
 Google ハングアウト
 - https://chrome.google.com/webstore/detail/google-hangouts/nckgahadagoaajjgafhacjanaoiihapd?hl=ja
 
