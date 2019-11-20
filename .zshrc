@@ -20,17 +20,19 @@ export PATH="$PATH:$HOME/.nodebrew/current/bin"
 export PATH="$PATH:$HOME/.pyenv/bin"
 export PATH="$PATH:$HOME/bin"
 
+eval "$(anyenv init -)"
+# eval "$(pyenv init -)"
+# eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
-eval "$(pyenv init -)"
-eval "$(rbenv init -)"
+eval "$(starship init zsh)"
 
 # golang
 export GOPATH=$HOME
 # export GOROOT=$HOME
-export GOENV_ROOT="$HOME/.goenv"
 export GO111MODULE=on
-export PATH="$GOENV_ROOT/bin:$PATH"
-eval "$(goenv init -)"
+# export GOENV_ROOT="$HOME/.goenv"
+# export PATH="$GOENV_ROOT/bin:$PATH"
+# eval "$(goenv init -)"
 
 # zstyle
 zstyle ':completion:*:default' menu select=2
@@ -236,25 +238,27 @@ function cd-up() {
 }
 
 # Google Cloud SDK
-if [ ! -e '/Users/shuma/google-cloud-sdk' ]; then
+if [ ! -e '/Users/shinozaki/google-cloud-sdk' ]; then
 	curl https://sdk.cloud.google.com | bash
 fi
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/shuma/google-cloud-sdk/path.zsh.inc' ]; then
-	source '/Users/shuma/google-cloud-sdk/path.zsh.inc'
+if [ -f '/Users/shinozaki/google-cloud-sdk/path.zsh.inc' ]; then
+	source '/Users/shinozaki/google-cloud-sdk/path.zsh.inc'
 fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/shuma/google-cloud-sdk/completion.zsh.inc' ]; then
-	source '/Users/shuma/google-cloud-sdk/completion.zsh.inc'
+if [ -f '/Users/shinozaki/google-cloud-sdk/completion.zsh.inc' ]; then
+	source '/Users/shinozaki/google-cloud-sdk/completion.zsh.inc'
 fi
 
 # appengine
-export PATH="$PATH:/Users/shuma/google-cloud-sdk/platform/google_appengine"
+export PATH="$PATH:/Users/shinozaki/google-cloud-sdk/platform/google_appengine"
 
 # サービスアカウント
 # export GOOGLE_APPLICATION_CREDENTIALS=~/service_account.json
 
 export CLOUDSDK_COMPUTE_ZONE=asia-northeast1-b
 export CLOUDSDK_COMPUTE_REGION=asia-northeast1
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

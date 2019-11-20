@@ -15,6 +15,7 @@ brew install fish
 # brew install geoip
 brew install ghq
 brew install gibo
+brew install git-secrets
 brew install goenv
 brew install graphviz
 brew install hub
@@ -54,6 +55,7 @@ brew cask install burp-suite
 brew cask install clipy
 brew cask install docker
 brew cask install docker-toolbox
+brew cask install dozer
 brew cask install dropbox
 brew cask install dynalist
 brew cask install google-chrome
@@ -63,9 +65,11 @@ brew cask install hyperswitch
 brew cask install iterm2
 brew cask install jasper
 brew cask install krisp
+brew cask install linear
 brew cask install muzzle
 brew cask install postman
 brew cask install qlstephen
+brew cask install runjs
 # brew cask install screenflow
 brew cask install slack
 brew cask install soundflower

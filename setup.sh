@@ -5,6 +5,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/m
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/vscode.sh)"
 ln -s ~/src/github.com/shinoshu/dotfiles/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/src/github.com/shinoshu/dotfiles/starship.toml ~/.config/starship.toml
 
 ########## dotfiles ##########
 git config --grobal ghq.root ~/src
