@@ -1,6 +1,7 @@
 export LANG=ja_JP.UTF-8
 export EDITOR=/usr/local/bin/vim
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
 
 bindkey -e
 
@@ -28,7 +29,7 @@ eval "$(starship init zsh)"
 
 # golang
 export GOPATH=$HOME
-# export GOROOT=$HOME
+export GOROOT=$HOME
 export GO111MODULE=on
 # export GOENV_ROOT="$HOME/.goenv"
 # export PATH="$GOENV_ROOT/bin:$PATH"
@@ -151,6 +152,7 @@ alias gbr="git branch -a"
 alias gco="git checkout"
 alias gst="git status"
 alias j="jobs -l"
+alias less="less -R"
 # alias l="gls --color=auto -l"
 # alias la="gls --color=auto -a"
 # alias lal="gls --color=auto -al"

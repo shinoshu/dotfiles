@@ -1,6 +1,8 @@
 [user]
 	name = Shuma Shinozaki
 	email = shu.shinozaki@gmail.com
+[init]
+	templatedir = ~/.git_templates
 [core]
 	editor = vim
     excludesfile = ~/.gitignore_global

@@ -34,10 +34,12 @@ brew install rbenv
 brew install rmtrash
 brew install ricty --with-powerline
 brew install snort
+brew install source-highlight
 brew install suricata
 brew install terminal-notifier
 brew install tig
 brew install tldr
+brew install tree
 brew install watch
 brew install zsh
 
@@ -49,6 +51,7 @@ brew cask install angry-ip-scanner
 brew cask install angular-console
 brew cask install appcleaner
 brew cask install avast-security
+brew cask install blackhole
 brew cask install burp-suite
 # brew cask install camtwist
 # brew cask install cheatsheet
@@ -58,6 +61,8 @@ brew cask install docker-toolbox
 brew cask install dozer
 brew cask install dropbox
 brew cask install dynalist
+brew cask install figma
+brew cask install fluid
 brew cask install google-chrome
 brew cask install google-japanese-ime
 brew cask install gyazo
@@ -65,14 +70,19 @@ brew cask install hyperswitch
 brew cask install iterm2
 brew cask install jasper
 brew cask install krisp
+brew cask install lastfm
 brew cask install linear
+brew cask install miro-formerly-realtimeboard
 brew cask install muzzle
+brew cask install near-lock
 brew cask install postman
 brew cask install qlstephen
 brew cask install runjs
 # brew cask install screenflow
+brew cask install shift
 brew cask install slack
 brew cask install soundflower
+brew cask install station
 brew cask install sublime-text
 brew cask install vagrant
 brew cask install virtualbox
@@ -81,6 +91,7 @@ brew cask install visual-studio-code
 brew cask install xmind
 brew cask install wireshark
 brew cask install zenmap
+brew cask install zoomus
 
 brew cask alfred link
 cp -p /usr/local/opt/ricty/share/fonts/* ~/Library/Fonts/
