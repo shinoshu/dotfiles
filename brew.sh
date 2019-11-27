@@ -3,7 +3,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install aircrack-ng
-# TODO: brew install anyenv
+brew install anyenv
 brew install arp-scan
 brew install awscli
 brew install bat
@@ -16,21 +16,21 @@ brew install fish
 brew install ghq
 brew install gibo
 brew install git-secrets
-brew install goenv
+# brew install goenv
 brew install graphviz
 brew install hub
 # brew install hydra
 brew install jq
 brew install mas
 brew install mkcert
-brew install nodebrew
+# brew install nodebrew
 brew install openvpn
 brew install peco
 brew install pipenv
 brew install plantuml
 brew install postgresql
-brew install pyenv
-brew install rbenv
+# brew install pyenv
+# brew install rbenv
 brew install rmtrash
 brew install ricty --with-powerline
 brew install snort
@@ -40,6 +40,7 @@ brew install terminal-notifier
 brew install tig
 brew install tldr
 brew install tree
+brew install vim
 brew install watch
 brew install zsh
 
