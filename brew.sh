@@ -65,6 +65,7 @@ brew cask install dynalist
 brew cask install figma
 brew cask install fluid
 brew cask install google-chrome
+# TODO: brew cask install google-cloud-sdk
 brew cask install google-japanese-ime
 brew cask install gyazo
 brew cask install hyperswitch
