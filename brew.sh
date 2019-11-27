@@ -32,7 +32,7 @@ brew install postgresql
 # brew install pyenv
 # brew install rbenv
 brew install rmtrash
-brew install ricty --with-powerline
+# brew install ricty --with-powerline
 brew install snort
 brew install source-highlight
 brew install suricata
@@ -94,7 +94,11 @@ brew cask install wireshark
 brew cask install zenmap
 brew cask install zoomus
 
+brew tap sanemat/font
+brew install sanemat/font/ricty
+fc-cache -vf
+
 brew cask alfred link
-cp -p /usr/local/opt/ricty/share/fonts/* ~/Library/Fonts/
+# cp -p /usr/local/opt/ricty/share/fonts/* ~/Library/Fonts/
 
 brew tap heroku/brew && brew install heroku
