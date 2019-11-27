@@ -8,6 +8,10 @@
 [package]
 # disabled = true
 
+[aws]
+style = "bold blue"
+symbol = "🅰 "
+
 [battery]
 full_symbol = "🔋"
 charging_symbol = "⚡️"
