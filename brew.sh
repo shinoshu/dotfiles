@@ -52,6 +52,7 @@ brew cask install angry-ip-scanner
 brew cask install angular-console
 brew cask install appcleaner
 brew cask install avast-security
+brew cask install bathyscaphe
 brew cask install blackhole
 brew cask install burp-suite
 # brew cask install camtwist
