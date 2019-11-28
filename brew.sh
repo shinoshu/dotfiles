@@ -98,6 +98,9 @@ brew cask install wireshark
 brew cask install zenmap
 brew cask install zoomus
 
+brew tap aws/tap
+brew install aws-sam-cli
+
 brew tap sanemat/font
 brew install sanemat/font/ricty
 fc-cache -vf
