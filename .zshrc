@@ -29,8 +29,8 @@ eval "$(starship init zsh)"
 
 # golang
 export GOPATH=$HOME
-export GOROOT=$HOME
-export GO111MODULE=on
+# export GOROOT=$HOME
+# export GO111MODULE=on
 # export GOENV_ROOT="$HOME/.goenv"
 # export PATH="$GOENV_ROOT/bin:$PATH"
 # eval "$(goenv init -)"

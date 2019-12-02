@@ -8,6 +8,7 @@ brew install arp-scan
 brew install awscli
 brew install bat
 brew install coreutils
+brew install dep
 brew install direnv
 brew install exa
 brew install exploitdb
@@ -31,6 +32,7 @@ brew install plantuml
 brew install postgresql
 # brew install pyenv
 # brew install rbenv
+brew install rename
 brew install rmtrash
 # brew install ricty --with-powerline
 brew install snort
@@ -96,6 +98,7 @@ brew cask install visual-studio-code
 brew cask install xmind
 brew cask install wireshark
 brew cask install zenmap
+brew cask install zeplin
 brew cask install zoomus
 
 brew tap aws/tap
