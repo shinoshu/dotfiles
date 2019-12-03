@@ -5,7 +5,7 @@
 	templatedir = ~/.git_templates
 [core]
 	editor = vim
-    excludesfile = ~/.gitignore_global
+	excludesfile = /Users/shinozaki/.gitignore_global
 [alias]
 	a = add
 	ac = !git add . && git commit
