@@ -8,6 +8,7 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension jebbs.plantuml
 code --install-extension johnpapa.vscode-peacock
 code --install-extension mosapride.zenkaku
+code --install-extension octref.vetur
 code --install-extension oderwat.indent-rainbow
 code --install-extension PKief.material-icon-theme
 code --install-extension sdras.night-owl

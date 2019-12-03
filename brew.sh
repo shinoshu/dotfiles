@@ -48,6 +48,7 @@ brew install zsh
 
 brew install caskroom/cask/brew-cask
 brew cask install 1password
+brew cask install accessmenubarapps
 brew cask install adobe-creative-cloud
 brew cask install alfred
 brew cask install angry-ip-scanner
@@ -90,6 +91,7 @@ brew cask install runjs
 brew cask install shift
 brew cask install slack
 brew cask install soundflower
+brew cask install sourcetree
 brew cask install station
 brew cask install sublime-text
 brew cask install vagrant

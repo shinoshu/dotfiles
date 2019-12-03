@@ -2,7 +2,9 @@
 
 mas install 417375580  # BetterSnapTool
 mas install 411643860  # DaisyDisk
+mas install 1055511498 # Day One
 mas install 406056744  # Evernote
+mas install 975937182  # Fantastical
 mas install 865500966  # feedly. Read more, know more
 mas install 587512244  # Kaleidoscope
 mas install 405399194  # Kindle
