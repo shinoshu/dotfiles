@@ -35,3 +35,9 @@ https://chrome.google.com/webstore/detail/adblock-%E2%80%94-best-ad-blocker/gigh
 
 Simplify Gmail
 - https://chrome.google.com/webstore/detail/simplify-gmail/pbmlfaiicoikhdbjagjbglnbfcbcojpj
+
+JSON Formatter
+- http://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=syuma1214&api_key=584842b1f1c7cead45f024e7f27a6ebd&format=json
+
+Vue.js devtools
+- https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd?hl=ja

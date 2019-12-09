@@ -44,6 +44,7 @@ brew install tldr
 brew install tree
 brew install vim
 brew install watch
+brew install wget
 brew install zsh
 
 brew install caskroom/cask/brew-cask
@@ -61,6 +62,7 @@ brew cask install burp-suite
 # brew cask install camtwist
 # brew cask install cheatsheet
 brew cask install clipy
+brew cask install dash
 brew cask install docker
 brew cask install docker-toolbox
 brew cask install dozer
@@ -68,6 +70,7 @@ brew cask install dropbox
 brew cask install dynalist
 brew cask install figma
 brew cask install fluid
+brew cask install fuwari
 brew cask install google-chrome
 # TODO: Edit .zshrc
 # TODO: brew cask install google-cloud-sdk
