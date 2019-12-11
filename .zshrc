@@ -46,6 +46,7 @@ fi
 source ~/src/github.com/zplug/zplug/init.zsh
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "mollifier/anyframe"
+zplug "mollifier/cd-gitroot"
 zplug "momo-lab/zsh-abbrev-alias"
 zplug "mafredri/zsh-async"
 zplug "mrowa44/emojify", as:command
