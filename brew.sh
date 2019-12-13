@@ -96,6 +96,7 @@ brew cask install slack
 brew cask install soundflower
 brew cask install sourcetree
 brew cask install station
+brew cask install stoplight-studio
 brew cask install sublime-text
 brew cask install vagrant
 brew cask install virtualbox
@@ -106,6 +107,8 @@ brew cask install wireshark
 brew cask install zenmap
 brew cask install zeplin
 brew cask install zoomus
+
+brew install suin/suin/git-remind
 
 brew tap aws/tap
 brew install aws-sam-cli

@@ -1,1 +1,2 @@
 https://www.telerik.com/fiddler
+https://nakajmg.github.io/SlackStatusChanger/
