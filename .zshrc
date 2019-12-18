@@ -73,9 +73,23 @@ bindkey '^X^B' zaw-git-branches
 bindkey '^X^P' zaw-process
 bindkey '^X^A' zaw-tmux
 
+function notify_precmd {
+	prev_command_status=$?
+	if [[ "$TTYIDLE" -gt 1 ]]; then
+		notify_title=$([ "$prev_command_status" -eq 0 ] && echo "Command Succded \U1F646" || echo "Command Failed \U1F645")
+		osascript -e "display notfication \"$prev_command\" with title \"$notify_title\""
+	fi
+}
+
+function store_command {
+	prev_command=$2
+}
+
 # anyframe
 autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
 add-zsh-hook chpwd chpwd_recent_dirs
+# add-zsh-hook preexec store_command
+# add-zsh-hook precmd notify_precmd
 
 # bindkey '^j^j' anyframe-widget-select-widget
 # bindkey '^j^b' anyframe-widget-checkout-git-branch
