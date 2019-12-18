@@ -6,6 +6,7 @@ brew install aircrack-ng
 brew install anyenv
 brew install arp-scan
 brew install awscli
+brew install azure-cli
 brew install bat
 brew install coreutils
 brew install dep
