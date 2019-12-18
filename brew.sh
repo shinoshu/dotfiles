@@ -60,6 +60,7 @@ brew cask install bathyscaphe
 brew cask install blackhole
 brew cask install burp-suite
 # brew cask install camtwist
+brew cask install cd-to
 # brew cask install cheatsheet
 brew cask install clipy
 brew cask install dash
@@ -88,7 +89,14 @@ brew cask install miro-formerly-realtimeboard
 brew cask install muzzle
 brew cask install near-lock
 brew cask install postman
+brew cask install qlcolorcode
+brew cask install qlimagesize
+brew cask install qlmarkdown
+brew cask install qlvideo
 brew cask install qlstephen
+brew cask install quicklookase
+brew cask install quicklook-csv
+brew cask install quicklook-json
 brew cask install runjs
 # brew cask install screenflow
 brew cask install shift
@@ -98,6 +106,7 @@ brew cask install sourcetree
 brew cask install station
 brew cask install stoplight-studio
 brew cask install sublime-text
+brew cask install suspicious-package
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
