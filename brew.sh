@@ -86,6 +86,7 @@ brew cask install java
 brew cask install krisp
 brew cask install lastfm
 brew cask install linear
+brew cask install metabase
 brew cask install miro-formerly-realtimeboard
 brew cask install muzzle
 brew cask install near-lock
@@ -118,6 +119,7 @@ brew cask install zenmap
 brew cask install zeplin
 brew cask install zoomus
 
+brew install masutaka/github-nippou/github-nippou
 brew install suin/suin/git-remind
 
 brew tap aws/tap
