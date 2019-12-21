@@ -86,6 +86,7 @@ brew cask install java
 brew cask install krisp
 brew cask install lastfm
 brew cask install linear
+brew cask install macdown
 brew cask install metabase
 brew cask install miro-formerly-realtimeboard
 brew cask install muzzle
