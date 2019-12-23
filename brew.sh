@@ -80,6 +80,7 @@ brew cask install google-japanese-ime
 brew cask install google-web-designer
 brew cask install gyazo
 brew cask install hyperswitch
+brew cask install inkscape
 brew cask install iterm2
 brew cask install jasper
 brew cask install java
