@@ -8,6 +8,7 @@ brew install arp-scan
 brew install awscli
 brew install azure-cli
 brew install bat
+brew install chrome-cli
 brew install coreutils
 brew install dep
 brew install direnv
@@ -74,6 +75,7 @@ brew cask install figma
 brew cask install fluid
 brew cask install fuwari
 brew cask install google-chrome
+brew cask install google-chrome-canary
 # TODO: Edit .zshrc
 # TODO: brew cask install google-cloud-sdk
 brew cask install google-japanese-ime
