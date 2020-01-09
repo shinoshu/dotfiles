@@ -57,6 +57,7 @@ brew cask install alfred
 brew cask install angry-ip-scanner
 brew cask install angular-console
 brew cask install appcleaner
+brew cask install atom
 brew cask install avast-security
 brew cask install bathyscaphe
 brew cask install blackhole
@@ -72,6 +73,7 @@ brew cask install dozer
 brew cask install dropbox
 brew cask install dynalist
 brew cask install figma
+brew cask install firefox
 brew cask install fluid
 brew cask install fuwari
 brew cask install google-chrome
@@ -84,6 +86,7 @@ brew cask install gyazo
 brew cask install hiddenbar
 brew cask install hyperswitch
 brew cask install inkscape
+brew cask install intellij-idea
 brew cask install iterm2
 brew cask install jasper
 brew cask install java
