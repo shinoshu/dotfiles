@@ -14,6 +14,7 @@ brew install dep
 brew install direnv
 brew install exa
 brew install exploitdb
+brew install ffmpeg
 brew install fish
 # brew install geoip
 brew install ghq
@@ -47,6 +48,7 @@ brew install tree
 brew install vim
 brew install watch
 brew install wget
+brew install youtube-dl
 brew install zsh
 
 brew install caskroom/cask/brew-cask
