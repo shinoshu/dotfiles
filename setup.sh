@@ -14,8 +14,9 @@ ghq get shinoshu/dotfiles
 dotfiles=(
     .gitconfig
     .gitignore_global
+    .hyper.js
     .tigrc
-	.tmux.conf
+    .tmux.conf
     .vimrc
     .wakatime.cfg
     .zshrc
