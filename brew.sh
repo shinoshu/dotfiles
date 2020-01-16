@@ -85,7 +85,9 @@ brew cask install google-chrome-canary
 brew cask install google-japanese-ime
 brew cask install google-web-designer
 brew cask install gyazo
+brew cask install hex-fiend
 brew cask install hiddenbar
+brew cask install hyper
 brew cask install hyperswitch
 brew cask install inkscape
 brew cask install intellij-idea
