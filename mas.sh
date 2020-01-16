@@ -17,6 +17,7 @@ mas install 411213048  # LadioCast
 mas install 1274495053 # Microsoft To Do
 mas install 823766827  # OneDrive
 mas install 1387766656 # Overflow 3
+mas install 407963104  # Pixelmator
 mas install 425955336  # Skitch
 mas install 692867256  # Simplenote
 mas install 957734279  # TogglDesktop
