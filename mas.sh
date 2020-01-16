@@ -23,4 +23,4 @@ mas install 957734279  # TogglDesktop
 mas install 1278508951 # Trello
 mas install 457622435  # Yoink
 mas install 568494494  # Pocket
-mas install 497799835  # Xcode
+# mas install 497799835  # Xcode
