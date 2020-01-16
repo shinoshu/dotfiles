@@ -101,6 +101,7 @@ brew cask install milanote
 brew cask install miro-formerly-realtimeboard
 brew cask install muzzle
 brew cask install near-lock
+brew cask install opera
 brew cask install postman
 brew cask install qlcolorcode
 brew cask install qlimagesize
@@ -125,6 +126,7 @@ brew cask install virtualbox
 brew cask install virtualbox-extension-pack
 brew cask install visual-studio-code
 brew cask install xmind
+brew cask install webstorm
 brew cask install wireshark
 brew cask install zenmap
 brew cask install zeplin
