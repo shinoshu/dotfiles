@@ -47,3 +47,9 @@ Redux DevTools
 
 Markdown Here
 - https://chrome.google.com/webstore/detail/markdown-here/elifhakcjgalahccnjkneoccemfahfoa?hl=ja
+
+File Icon for GitHub and GitLab
+- https://chrome.google.com/webstore/detail/file-icon-for-github-and/ficfmibkjjnpogdcfhfokmihanoldbfe
+
+SHOWROOM すこすこツール＋
+- https://chrome.google.com/webstore/detail/showroom-%E3%81%99%E3%81%93%E3%81%99%E3%81%93%E3%83%84%E3%83%BC%E3%83%AB%EF%BC%8B/bpimjnbkllaejbmjhceepgndkdapnafd?hl=ja

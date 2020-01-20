@@ -130,6 +130,7 @@ brew cask install visual-studio-code
 brew cask install xmind
 brew cask install webstorm
 brew cask install wireshark
+brew cask install wrike
 brew cask install zenmap
 brew cask install zeplin
 brew cask install zoomus
