@@ -21,6 +21,7 @@ brew install ghq
 brew install gibo
 brew install git-secrets
 # brew install goenv
+brew install golang-migrate
 brew install graphviz
 brew install hub
 # brew install hydra
@@ -33,6 +34,7 @@ brew install peco
 brew install pipenv
 brew install plantuml
 brew install postgresql
+brew install protobuf
 # brew install pyenv
 # brew install rbenv
 brew install rename
@@ -114,6 +116,7 @@ brew cask install quicklookase
 brew cask install quicklook-csv
 brew cask install quicklook-json
 brew cask install runjs
+brew cask install sequel-pro
 # brew cask install screenflow
 brew cask install shift
 brew cask install slack
@@ -123,6 +126,7 @@ brew cask install station
 brew cask install stoplight-studio
 brew cask install sublime-text
 brew cask install suspicious-package
+# brew cask install teamsql
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
