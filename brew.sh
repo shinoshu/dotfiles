@@ -65,6 +65,7 @@ brew cask install atom
 brew cask install avast-security
 brew cask install bathyscaphe
 brew cask install blackhole
+# brew cask install blender
 brew cask install burp-suite
 # brew cask install camtwist
 brew cask install cd-to
@@ -74,6 +75,7 @@ brew cask install dash
 brew cask install docker
 brew cask install docker-toolbox
 brew cask install dozer
+# brew cask install drama
 brew cask install dropbox
 brew cask install dynalist
 brew cask install figma
