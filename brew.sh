@@ -129,6 +129,8 @@ brew cask install stoplight-studio
 brew cask install sublime-text
 brew cask install suspicious-package
 # brew cask install teamsql
+brew cask install unity
+brew cask install unity-hub
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack

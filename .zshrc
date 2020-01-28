@@ -273,7 +273,7 @@ source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.in
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
 # appengine
-export PATH="$PATH:/Users/shinozaki/google-cloud-sdk/platform/google_appengine"
+# export PATH="$PATH:/Users/shinozaki/google-cloud-sdk/platform/google_appengine"
 
 # サービスアカウント
 # export GOOGLE_APPLICATION_CREDENTIALS=~/service_account.json
