@@ -51,3 +51,5 @@
 	template = /Users/shinozaki/.stCommitMsg
 [remind]
 	paths = /Users/shinozaki/src/github.com/shinoshu/*
+[include]
+	path = /Users/shinozaki/.gitconfig.local
