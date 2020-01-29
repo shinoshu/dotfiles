@@ -19,6 +19,7 @@ brew install fish
 # brew install geoip
 brew install ghq
 brew install gibo
+brew install git-flow
 brew install git-secrets
 # brew install goenv
 brew install golang-migrate
