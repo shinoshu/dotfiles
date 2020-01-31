@@ -55,6 +55,7 @@ zplug "mrowa44/emojify", as:command
 zplug "wbinglee/zsh-wakatime"
 zplug "zsh-users/zsh-autosuggestions", defer:2
 zplug "zsh-users/zsh-completions", defer:2
+zplug "zsh-users/zsh-history-substring-search", defer:2
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 if ! zplug check --verbose; then
 	zplug install
@@ -131,7 +132,6 @@ setopt mark_dirs
 setopt list_types
 setopt auto_menu
 setopt interactive_comments
-setopt magic_equal_subst
 setopt complete_in_word
 setopt always_last_prompt
 setopt print_eight_bit

@@ -119,6 +119,7 @@ brew cask install quicklookase
 brew cask install quicklook-csv
 brew cask install quicklook-json
 brew cask install runjs
+# brew cask install sbrowserq
 brew cask install sequel-pro
 # brew cask install screenflow
 brew cask install shift
