@@ -141,8 +141,10 @@ setopt globdots
 setopt brace_ccl
 setopt notify
 
+fpath=($HOME/.zsh/completion $fpath)
+
 # completion
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit -i
 
 # fpath=($HOME/src/github.com/knu/zsh-git-escape-magic $fpath) && compinit
 # autoload -Uz git-escape-magic && git-escape-magic
