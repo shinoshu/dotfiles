@@ -93,6 +93,7 @@ brew cask install google-web-designer
 brew cask install gyazo
 brew cask install hex-fiend
 brew cask install hiddenbar
+brew cask install http-toolkit
 brew cask install hyper
 brew cask install hyperswitch
 brew cask install inkscape

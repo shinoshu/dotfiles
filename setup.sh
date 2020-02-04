@@ -6,9 +6,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/m
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/vscode.sh)"
 ln -s ~/src/github.com/shinoshu/dotfiles/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s ~/src/github.com/shinoshu/dotfiles/starship.toml ~/.config/starship.toml
+ln -s ~/src/github.com/shinoshu/dotfiles/.zsh ~/.zsh
 ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport ~/bin/airport
 ln -sf /usr/local/bin/gcc-9 /usr/local/bin/gcc
 ln -sf /usr/local/bin/g++-9 /usr/local/bin/g++
+
+curl -L https://raw.githubusercontent.com/docker/cli/master/contrib/completion/zsh/_docker > .zsh/completion/_docker
+curl -L https://raw.githubusercontent.com/docker/compose/master/contrib/completion/zsh/_docker-compose > .zsh/completion/_docker-compose
 
 ########## dotfiles ##########
 git config --grobal ghq.root ~/src
