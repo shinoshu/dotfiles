@@ -7,6 +7,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/shinoshu/dotfiles/master/v
 ln -s ~/src/github.com/shinoshu/dotfiles/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s ~/src/github.com/shinoshu/dotfiles/starship.toml ~/.config/starship.toml
 ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport ~/bin/airport
+ln -sf /usr/local/bin/gcc-9 /usr/local/bin/gcc
+ln -sf /usr/local/bin/g++-9 /usr/local/bin/g++
 
 ########## dotfiles ##########
 git config --grobal ghq.root ~/src

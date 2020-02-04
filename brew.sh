@@ -16,6 +16,7 @@ brew install exa
 brew install exploitdb
 brew install ffmpeg
 brew install fish
+brew install gcc
 # brew install geoip
 brew install ghq
 brew install gibo
