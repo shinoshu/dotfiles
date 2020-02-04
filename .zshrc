@@ -45,6 +45,7 @@ fi
 
 source ~/src/github.com/zplug/zplug/init.zsh
 zplug "b4b4r07/enhancd", use:init.sh
+zplug "greymd/docker-zsh-completion"
 zplug "mollifier/anyframe"
 zplug "mollifier/cd-gitroot"
 zplug "momo-lab/zsh-abbrev-alias"
