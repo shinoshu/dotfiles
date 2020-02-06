@@ -110,6 +110,7 @@ brew cask install milanote
 brew cask install miro-formerly-realtimeboard
 brew cask install muzzle
 brew cask install near-lock
+brew cask install ngrok
 brew cask install opera
 brew cask install postman
 brew cask install qlcolorcode
@@ -133,6 +134,7 @@ brew cask install stoplight-studio
 brew cask install sublime-text
 brew cask install suspicious-package
 # brew cask install teamsql
+brew cask install transmission
 brew cask install unity
 brew cask install unity-hub
 brew cask install vagrant
