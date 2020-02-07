@@ -3,6 +3,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install aircrack-ng
+brew install ansible
 brew install anyenv
 brew install arp-scan
 brew install awscli
@@ -45,6 +46,7 @@ brew install rmtrash
 brew install snort
 brew install source-highlight
 brew install suricata
+brew install terraform
 brew install terminal-notifier
 brew install tig
 brew install tldr
@@ -135,6 +137,7 @@ brew cask install stoplight-studio
 brew cask install sublime-text
 brew cask install suspicious-package
 # brew cask install teamsql
+brew cask install the-unarchiver
 brew cask install transmission
 brew cask install unity
 brew cask install unity-hub
