@@ -73,6 +73,7 @@ brew cask install burp-suite
 brew cask install cd-to
 # brew cask install cheatsheet
 brew cask install clipy
+brew cask install cyberduck
 brew cask install dash
 brew cask install docker
 brew cask install docker-toolbox
