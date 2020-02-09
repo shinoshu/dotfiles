@@ -67,6 +67,7 @@ brew cask install angular-console
 brew cask install appcleaner
 brew cask install atom
 brew cask install avast-security
+brew cask install balenaetcher
 brew cask install bathyscaphe
 brew cask install blackhole
 # brew cask install blender
