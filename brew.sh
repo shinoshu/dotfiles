@@ -140,6 +140,7 @@ brew cask install suspicious-package
 # brew cask install teamsql
 brew cask install the-unarchiver
 brew cask install transmission
+brew cask install unetbootin
 brew cask install unity
 brew cask install unity-hub
 brew cask install vagrant
