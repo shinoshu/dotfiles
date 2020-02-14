@@ -82,6 +82,7 @@ brew cask install docker
 brew cask install docker-toolbox
 brew cask install dozer
 # brew cask install drama
+brew cask install drawio
 brew cask install dropbox
 brew cask install dynalist
 brew cask install figma
@@ -90,8 +91,8 @@ brew cask install fluid
 brew cask install fuwari
 brew cask install google-chrome
 brew cask install google-chrome-canary
-# TODO: Edit .zshrc
-# TODO: brew cask install google-cloud-sdk
+brew cask install google-cloud-sdk
+brew cask install google-drive-file-stream
 brew cask install google-japanese-ime
 brew cask install google-web-designer
 brew cask install gyazo
