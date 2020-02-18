@@ -116,6 +116,7 @@ brew cask install metabase
 brew cask install muzzle
 brew cask install near-lock
 brew cask install ngrok
+brew cask install openinterminal
 brew cask install opera
 brew cask install postman
 brew cask install qlcolorcode
