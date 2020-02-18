@@ -71,7 +71,7 @@ brew cask install balenaetcher
 brew cask install bathyscaphe
 brew cask install blackhole
 # brew cask install blender
-brew cask install burp-suite
+# brew cask install burp-suite
 # brew cask install camtwist
 brew cask install cd-to
 # brew cask install cheatsheet
@@ -92,10 +92,10 @@ brew cask install fuwari
 brew cask install google-chrome
 brew cask install google-chrome-canary
 brew cask install google-cloud-sdk
-brew cask install google-drive-file-stream
+# brew cask install google-drive-file-stream
 brew cask install google-japanese-ime
-brew cask install google-web-designer
-brew cask install gyazo
+# brew cask install google-web-designer
+# brew cask install gyazo
 brew cask install hex-fiend
 brew cask install hiddenbar
 brew cask install http-toolkit
@@ -111,8 +111,8 @@ brew cask install lastfm
 brew cask install linear
 brew cask install macdown
 brew cask install metabase
-brew cask install milanote
-brew cask install miro-formerly-realtimeboard
+# brew cask install milanote
+# brew cask install miro-formerly-realtimeboard
 brew cask install muzzle
 brew cask install near-lock
 brew cask install ngrok
@@ -131,19 +131,20 @@ brew cask install runjs
 brew cask install sequel-pro
 # brew cask install screenflow
 brew cask install shift
+brew cask install simple-comic
 brew cask install slack
 brew cask install soundflower
 brew cask install sourcetree
 brew cask install station
-brew cask install stoplight-studio
+# brew cask install stoplight-studio
 brew cask install sublime-text
 brew cask install suspicious-package
 # brew cask install teamsql
 brew cask install the-unarchiver
 brew cask install transmission
 brew cask install unetbootin
-brew cask install unity
-brew cask install unity-hub
+# brew cask install unity
+# brew cask install unity-hub
 brew cask install vagrant
 brew cask install virtualbox
 brew cask install virtualbox-extension-pack
@@ -152,8 +153,8 @@ brew cask install xmind
 brew cask install webstorm
 brew cask install wireshark
 brew cask install wrike
-brew cask install zenmap
-brew cask install zeplin
+# brew cask install zenmap
+# brew cask install zeplin
 brew cask install zoomus
 
 brew install masutaka/github-nippou/github-nippou
