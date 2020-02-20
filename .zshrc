@@ -275,6 +275,8 @@ function cd-up() {
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
 # appengine
 # export PATH="$PATH:/Users/shinozaki/google-cloud-sdk/platform/google_appengine"
 

@@ -52,6 +52,8 @@ brew install tig
 brew install tldr
 brew install tree
 brew install vim
+brew install pyenv-virtualenv
+brew install pyenv-virtualenvwrapper
 brew install watch
 brew install wget
 brew install youtube-dl
@@ -130,6 +132,7 @@ brew cask install quicklook-json
 brew cask install runjs
 # brew cask install sbrowserq
 brew cask install sequel-pro
+brew cask install serviio
 # brew cask install screenflow
 brew cask install shift
 brew cask install simple-comic
