@@ -65,6 +65,7 @@ killall Finder
 # npm i -g npm-check-updates
 # npm i -g @angular/cli
 # npm i -g @google/clasp
+# npm i -g @nrwl/cli
 # npm i -g textlint
 #
 # xcode-select --install

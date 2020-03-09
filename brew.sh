@@ -64,6 +64,7 @@ brew cask install 1password
 brew cask install accessmenubarapps
 brew cask install adobe-creative-cloud
 brew cask install alfred
+# brew cask install android-studio
 brew cask install angry-ip-scanner
 brew cask install angular-console
 brew cask install appcleaner
@@ -81,6 +82,7 @@ brew cask install clipy
 brew cask install cyberduck
 brew cask install dash
 brew cask install docker
+brew cask install docker-machine
 brew cask install docker-toolbox
 brew cask install dozer
 # brew cask install drama
@@ -131,7 +133,8 @@ brew cask install quicklook-csv
 brew cask install quicklook-json
 brew cask install runjs
 # brew cask install sbrowserq
-brew cask install sequel-pro
+# brew cask install sequel-pro
+brew cask install sequel-pro-nightly
 brew cask install serviio
 # brew cask install screenflow
 brew cask install shift
