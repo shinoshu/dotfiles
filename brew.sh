@@ -65,22 +65,22 @@ brew cask install accessmenubarapps
 brew cask install adobe-creative-cloud
 brew cask install alfred
 # brew cask install android-studio
-brew cask install angry-ip-scanner
-brew cask install angular-console
+# brew cask install angry-ip-scanner
+# brew cask install angular-console
 brew cask install appcleaner
-brew cask install atom
-brew cask install avast-security
-brew cask install balenaetcher
+# brew cask install atom
+# brew cask install avast-security
+# brew cask install balenaetcher
 brew cask install bathyscaphe
-brew cask install blackhole
+# brew cask install blackhole
 # brew cask install blender
 # brew cask install burp-suite
 # brew cask install camtwist
 brew cask install cd-to
 # brew cask install cheatsheet
 brew cask install clipy
-brew cask install cyberduck
-brew cask install dash
+# brew cask install cyberduck
+# brew cask install dash
 brew cask install docker
 brew cask install docker-machine
 brew cask install docker-toolbox
@@ -89,10 +89,10 @@ brew cask install dozer
 brew cask install drawio
 brew cask install dropbox
 brew cask install dynalist
-brew cask install figma
+# brew cask install figma
 brew cask install firefox
-brew cask install fluid
-brew cask install fuwari
+# brew cask install fluid
+# brew cask install fuwari
 brew cask install google-chrome
 brew cask install google-chrome-canary
 brew cask install google-cloud-sdk
@@ -108,12 +108,13 @@ brew cask install hyperswitch
 brew cask install inkscape
 brew cask install intellij-idea
 brew cask install iterm2
-brew cask install jasper
+# brew cask install jasper
 brew cask install java
 brew cask install krisp
 brew cask install lastfm
 brew cask install linear
-brew cask install macdown
+# brew cask install macdown
+brew cask install mamp
 brew cask install metabase
 brew cask install middleclick
 # brew cask install milanote
@@ -139,18 +140,18 @@ brew cask install sequel-pro-nightly
 brew cask install serviio
 # brew cask install screenflow
 brew cask install shift
-brew cask install simple-comic
+# brew cask install simple-comic
 brew cask install slack
 brew cask install soundflower
 brew cask install sourcetree
 brew cask install station
 # brew cask install stoplight-studio
 brew cask install sublime-text
-brew cask install suspicious-package
+# brew cask install suspicious-package
 # brew cask install teamsql
 brew cask install the-unarchiver
 brew cask install transmission
-brew cask install unetbootin
+# brew cask install unetbootin
 # brew cask install unity
 # brew cask install unity-hub
 brew cask install vagrant
@@ -159,7 +160,7 @@ brew cask install virtualbox-extension-pack
 brew cask install visual-studio-code
 brew cask install xmind
 brew cask install webstorm
-brew cask install wireshark
+# brew cask install wireshark
 brew cask install wrike
 # brew cask install zenmap
 # brew cask install zeplin
