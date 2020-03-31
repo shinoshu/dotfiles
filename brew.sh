@@ -84,11 +84,11 @@ brew cask install clipy
 brew cask install docker
 brew cask install docker-machine
 brew cask install docker-toolbox
-brew cask install dozer
+# brew cask install dozer
 # brew cask install drama
 brew cask install drawio
 brew cask install dropbox
-brew cask install dynalist
+# brew cask install dynalist
 # brew cask install figma
 brew cask install firefox
 # brew cask install fluid
@@ -103,7 +103,7 @@ brew cask install google-japanese-ime
 brew cask install hex-fiend
 brew cask install hiddenbar
 brew cask install http-toolkit
-brew cask install hyper
+# brew cask install hyper
 brew cask install hyperswitch
 brew cask install inkscape
 brew cask install intellij-idea
@@ -119,7 +119,7 @@ brew cask install metabase
 brew cask install middleclick
 # brew cask install milanote
 # brew cask install miro-formerly-realtimeboard
-brew cask install muzzle
+# brew cask install muzzle
 brew cask install near-lock
 brew cask install ngrok
 brew cask install openinterminal
