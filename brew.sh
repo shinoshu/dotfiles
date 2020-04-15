@@ -2,14 +2,14 @@
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew install aircrack-ng
+# brew install aircrack-ng
 brew install ansible
 brew install anyenv
 brew install arp-scan
 brew install awscli
 brew install azure-cli
 brew install bat
-brew install chrome-cli
+# brew install chrome-cli
 brew install coreutils
 brew install dep
 brew install direnv
@@ -120,7 +120,7 @@ brew cask install middleclick
 # brew cask install milanote
 # brew cask install miro-formerly-realtimeboard
 # brew cask install muzzle
-brew cask install near-lock
+# brew cask install near-lock
 brew cask install ngrok
 brew cask install openinterminal
 brew cask install opera
