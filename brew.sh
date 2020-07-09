@@ -56,6 +56,7 @@ brew install pyenv-virtualenv
 brew install pyenv-virtualenvwrapper
 brew install watch
 brew install wget
+brew install yarn
 brew install youtube-dl
 brew install zsh
 
@@ -166,6 +167,7 @@ brew cask install wrike
 # brew cask install zeplin
 brew cask install zoomus
 
+brew install github/gh/gh
 brew install masutaka/github-nippou/github-nippou
 brew install suin/suin/git-remind
 
@@ -180,3 +182,4 @@ brew cask alfred link
 # cp -p /usr/local/opt/ricty/share/fonts/* ~/Library/Fonts/
 
 brew tap heroku/brew && brew install heroku
+brew install suin/suin/git-remind
