@@ -83,8 +83,8 @@ brew cask install clipy
 # brew cask install cyberduck
 # brew cask install dash
 brew cask install docker
-brew cask install docker-machine
-brew cask install docker-toolbox
+# brew cask install docker-machine
+# brew cask install docker-toolbox
 # brew cask install dozer
 # brew cask install drama
 brew cask install drawio
@@ -140,7 +140,7 @@ brew cask install runjs
 brew cask install sequel-pro-nightly
 brew cask install serviio
 # brew cask install screenflow
-brew cask install shift
+# brew cask install shift
 # brew cask install simple-comic
 brew cask install slack
 brew cask install soundflower
