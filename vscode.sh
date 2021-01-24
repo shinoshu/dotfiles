@@ -5,6 +5,7 @@ code --install-extension codezombiech.gitignore
 code --install-extension CoenraadS.bracket-pair-colorizer
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
+code --install-extension GitHub.vscode-pull-request-github
 code --install-extension jebbs.plantuml
 code --install-extension johnpapa.vscode-peacock
 code --install-extension mosapride.zenkaku
