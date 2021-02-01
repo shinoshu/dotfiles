@@ -12,6 +12,9 @@
 style = "bold blue"
 symbol = "🅰 "
 
+[gcloud]
+format = 'on [$symbol $account (\($project\))]($style) '
+
 [battery]
 full_symbol = "🔋"
 charging_symbol = "⚡️"
