@@ -195,7 +195,7 @@ alias o.="open ."
 alias p="pwd"
 alias q="ghq list"
 # alias rm="rm -i"
-alias rm="rmtrash"
+alias rm="trash"
 alias vi="vim"
 alias vim="/usr/local/bin/vim"
 
