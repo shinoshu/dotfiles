@@ -105,7 +105,7 @@ bindkey '^[r' redo
 
 # prompt
 # PROMPT='%m:%c %n$ '
-PROMPT='%F{blue}[%m:%c]%f %F{green}%n%f $ '
+# PROMPT='%F{blue}[%m:%c]%f %F{green}%n%f $ '
 
 # history
 setopt bang_hist
@@ -224,8 +224,8 @@ zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
 zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
 zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformts "[%b|%a]"
-setopt prompt_subst
-RPROMPT='${vcs_info_msg_0_}'
+# setopt prompt_subst
+# RPROMPT='${vcs_info_msg_0_}'
 
 # cache
 zstyle ':completion:*' use-cache yes
