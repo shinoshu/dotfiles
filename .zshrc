@@ -1,49 +1,48 @@
-export LANG=ja_JP.UTF-8
-export EDITOR=/usr/local/bin/vim
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
-
-bindkey -e
-
-# enable ctrl-s
-stty stop undef
-
 if [ ! -f ~/.zshrc.zwc ] || [ ~/.zshrc -nt ~/.zshrc.zwc ]; then
-	echo zcompile
 	zcompile ~/.zshrc
 fi
 
-# path
+stty stop undef
+
+source ~/src/github.com/zplug/zplug/init.zsh
+source ~/src/github.com/zsh-users/zaw/zaw.zsh
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+
+autoload -Uz add-zsh-hook edit-command-line cdr chpwd_recent_dirs
+autoload -Uz colors && colors
+autoload -Uz compinit && compinit -i
+
+bindkey -e
+bindkey '^[u' undo
+bindkey '^[r' redo
+bindkey '^@' zaw-cdr
+bindkey '^R' zaw-history
+bindkey '^X^F' zaw-git-files
+bindkey '^X^B' zaw-git-branches
+bindkey '^X^P' zaw-process
+bindkey '^X^A' zaw-tmux
+bindkey '^y' cd-up
+bindkey '^je' edit-command-line
+
+export LANG=ja_JP.UTF-8
+export EDITOR=/usr/local/bin/vim
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="$PATH:$GOPATH/bin"
-export PATH="$PATH:$HOME/.nodebrew/current/bin"
-export PATH="$PATH:$HOME/.pyenv/bin"
-export PATH="$PATH:$HOME/bin"
+export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.anyenv/envs/pyenv/shims:$PATH"
+export GOPATH=$HOME
 
 eval "$(anyenv init -)"
-# eval "$(pyenv init -)"
-# eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
 eval "$(starship init zsh)"
 
-# golang
-export GOPATH=$HOME
-# export GOROOT=$HOME
-# export GO111MODULE=on
-# export GOENV_ROOT="$HOME/.goenv"
-# export PATH="$GOENV_ROOT/bin:$PATH"
-# eval "$(goenv init -)"
-
-# zstyle
 zstyle ':completion:*:default' menu select=2
+zstyle ':completion:*' use-cache yes
+zstyle ':completion:*' cache-path ~/.zsh/cache
+zstyle ':completion:*' verbose yes
 
-# zplug
-if [ ! -d ~/src/github.com/zplug/zplug/ ]; then
-	ghq get https://github.com/zplug/zplug.git
-fi
-
-source ~/src/github.com/zplug/zplug/init.zsh
 zplug "b4b4r07/enhancd", use:init.sh
 zplug "greymd/docker-zsh-completion"
 zplug "mollifier/anyframe"
@@ -51,8 +50,6 @@ zplug "mollifier/cd-gitroot"
 zplug "momo-lab/zsh-abbrev-alias"
 zplug "mafredri/zsh-async"
 zplug "mrowa44/emojify", as:command
-# zplug "olivierverdier/zsh-git-prompt"
-# zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
 zplug "wbinglee/zsh-wakatime"
 zplug "zsh-users/zsh-autosuggestions", defer:2
 zplug "zsh-users/zsh-completions", defer:2
@@ -63,51 +60,10 @@ if ! zplug check --verbose; then
 fi
 zplug load
 
-# zaw
-if [ ! -d ~/src/github.com/zsh-users/zaw/ ]; then
-	ghq get https://github.com/zsh-users/zaw.git
-fi
-source ~/src/github.com/zsh-users/zaw/zaw.zsh
-bindkey '^@' zaw-cdr
-bindkey '^R' zaw-history
-bindkey '^X^F' zaw-git-files
-bindkey '^X^B' zaw-git-branches
-bindkey '^X^P' zaw-process
-bindkey '^X^A' zaw-tmux
+HISTFILE=~/.zsh_history
+HISTSIZE=1000000
+SAVEHIST=1000000
 
-function notify_precmd {
-	prev_command_status=$?
-	if [[ "$TTYIDLE" -gt 1 ]]; then
-		notify_title=$([ "$prev_command_status" -eq 0 ] && echo "Command Succded \U1F646" || echo "Command Failed \U1F645")
-		osascript -e "display notfication \"$prev_command\" with title \"$notify_title\""
-	fi
-}
-
-function store_command {
-	prev_command=$2
-}
-
-# anyframe
-autoload -Uz chpwd_recent_dirs cdr add-zsh-hook
-add-zsh-hook chpwd chpwd_recent_dirs
-# add-zsh-hook preexec store_command
-# add-zsh-hook precmd notify_precmd
-
-# bindkey '^j^j' anyframe-widget-select-widget
-# bindkey '^j^b' anyframe-widget-checkout-git-branch
-# bindkey '^j^c' anyframe-widget-cdr
-# bindkey '^j^g' anyframe-widget-cd-ghq-repository
-# bindkey '^j^p' anyframe-widget-kill
-# bindkey '^j^r' anyframe-widget-put-history
-
-bindkey '^[u' undo
-bindkey '^[r' redo
-
-# prompt
-# PROMPT='%m:%c %n$ '
-# PROMPT='%F{blue}[%m:%c]%f %F{green}%n%f $ '
-
-# history
 setopt bang_hist
 setopt extended_history
 setopt hist_expand
@@ -119,13 +75,6 @@ setopt hist_save_no_dups
 setopt hist_verify
 setopt inc_append_history
 setopt share_history
-
-# HISTFILE=~/Dropbox/.zsh_history
-HISTFILE=~/.zsh_history
-HISTSIZE=1000000
-SAVEHIST=1000000
-
-# option
 # setopt auto_cd
 setopt correct
 setopt magic_equal_subst
@@ -142,18 +91,6 @@ setopt globdots
 setopt brace_ccl
 setopt notify
 
-fpath=($HOME/.zsh/completion $fpath)
-
-# completion
-autoload -Uz compinit && compinit -i
-
-# fpath=($HOME/src/github.com/knu/zsh-git-escape-magic $fpath) && compinit
-# autoload -Uz git-escape-magic && git-escape-magic
-
-# color
-autoload -Uz colors && colors
-
-# alias
 alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew"
 alias cp="cp -i"
 alias d="docker"
@@ -166,124 +103,50 @@ alias gad="git add -v"
 alias gac="git ac"
 alias gba="git branch -a"
 alias gbr="git branch -a"
-# alias gcm="git commit -m"
+alias gcm="git commit -m"
 alias gco="git checkout"
 alias gst="git status"
 alias j="jobs -l"
 alias less="less -R"
-# alias l="gls --color=auto -l"
-# alias la="gls --color=auto -a"
-# alias lal="gls --color=auto -al"
-# alias ll="gls --color=auto -l"
-# alias ls="gls --color=auto -G"
-# alias lt="gls --color=auto -lt"
-# alias ltr="gls --color=auto -ltr"
-# alias l.="gls --color=auto -ld .*"
-alias ls="exa --git"
+alias ls="exa --git --icons"
 alias l="ls -l"
 alias la="ls -al"
-alias ll=l
+alias ll="l"
 alias lt="ls -l -s=time"
 alias ltr="ls -l -rs=time"
-alias l.="gls --color=auto -ld .*"
 alias mv="mv -i"
 alias notify="terminal-notifier -message 'Done' -sound default"
 alias pull="git pull"
-# alias push="git push"
+alias push="git push"
 alias o="open"
-alias o.="open ."
 alias p="pwd"
 alias q="ghq list"
-# alias rm="rm -i"
 alias rm="trash"
 alias vi="vim"
 alias vim="/usr/local/bin/vim"
-
 alias -g L="| less"
 alias -g ...="../../"
-
-# alias -s py="python"
+alias -s py="python"
 alias -s go="go run"
-
-# abbrev-alias
 abbrev-alias gcm='git commit'
 abbrev-alias push='git push origin'
 abbrev-alias v='vim'
-abbrev-alias 'ゔぃｍ'='vim'
-
 abbrev-alias -g ghqhub='~/src/github.com/'
 abbrev-alias -g gohub='~/go/src/github.com/'
 abbrev-alias -g myhub='~/src/github.com/shinoshu/'
 abbrev-alias -g G="| grep"
 
-# VCS
-autoload -Uz vcs_info
-precmd() { vcs_info }
-zstyle ':vcs_info:git:*' check-for-changes true
-zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
-zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
-zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
-zstyle ':vcs_info:*' actionformts "[%b|%a]"
-# setopt prompt_subst
-# RPROMPT='${vcs_info_msg_0_}'
-
-# cache
-zstyle ':completion:*' use-cache yes
-zstyle ':completion:*' cache-path ~/.zsh/cache
-zstyle ':completion:*' verbose yes
-
-autoload -Uz edit-command-line
 zle -N edit-command-line
-bindkey '^je' edit-command-line
+zle -N cd-up
 
-# function
-function update() {
-	brew upgrade
-	ncu -g | grep npm | sh -x
-	ghq-update
-}
+fpath=($HOME/.zsh/completion $fpath)
+
+add-zsh-hook chpwd chpwd_recent_dirs
 
 function ghq-update() {
 	ghq list | grep github.com | sed -E 's/^[^\/]+\/(.+)/\1/' | xargs -n 1 -P 10 -t ghq get -u
 }
 
-function google-chrome() {
-	/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --profile-directory=$1 $2
-}
-
-zle -N cd-up
-bindkey '^y' cd-up
 function cd-up() {
 	zle push-line && LBUFFER='builtin cd ..' && zle accept-line
 }
-
-# # Google Cloud SDK
-# if [ ! -e '/Users/shinozaki/google-cloud-sdk' ]; then
-# 	curl https://sdk.cloud.google.com | bash
-# fi
-#
-# # The next line updates PATH for the Google Cloud SDK.
-# if [ -f '/Users/shinozaki/google-cloud-sdk/path.zsh.inc' ]; then
-# 	source '/Users/shinozaki/google-cloud-sdk/path.zsh.inc'
-# fi
-#
-# # The next line enables shell command completion for gcloud.
-# if [ -f '/Users/shinozaki/google-cloud-sdk/completion.zsh.inc' ]; then
-# 	source '/Users/shinozaki/google-cloud-sdk/completion.zsh.inc'
-# fi
-
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
-
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
-
-# appengine
-# export PATH="$PATH:/Users/shinozaki/google-cloud-sdk/platform/google_appengine"
-
-# サービスアカウント
-# export GOOGLE_APPLICATION_CREDENTIALS=~/service_account.json
-
-export CLOUDSDK_COMPUTE_ZONE=asia-northeast1-b
-export CLOUDSDK_COMPUTE_REGION=asia-northeast1
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
